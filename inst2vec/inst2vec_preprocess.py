@@ -1693,7 +1693,6 @@ def add_stmts_to_graph(G, file, functions_defined_in_file, functions_declared_in
                      func_name_ = re.search(r'(' + rgx.local_id + r')\(.*\)($|\n)', line)
                 assert func_name_ is not None, "Could not identify function name in:\n" + line
                 func_name = func_name_.group(1)
-                print("\nfunction call detected: "+line)
                 # If there is an assignee, get it and add its node
                 if re.match(rgx.local_id + r' = ', line) is not None:
                     assignee = re.match(r'(' + rgx.local_id + r') = ', line).group(1)
@@ -1780,7 +1779,6 @@ def add_stmts_to_graph(G, file, functions_defined_in_file, functions_declared_in
                         raise
 
                 if func_name[1:] in functions_defined_in_file.keys():
-                    print("defed")
                     # if this function is defined in this file
 
                     # Get the called function's shortened name
@@ -1808,16 +1806,14 @@ def add_stmts_to_graph(G, file, functions_defined_in_file, functions_declared_in
                                     add_edge(G, '', glob_ref, '', a_called, line, 'path')
                                
                                 add_edge(G, '', a_called, called_func + '_', a_defined, line, 'data')
-                                print(func_prefix+"    "+a_called+"    "+a_defined+"   (global)   ")
-                                #----call---
+                           
                             elif re.match(rgx.local_id, a_called):
                                 # if operand is in this basic block, then the statement has a parent
                                 if func_prefix + a_called in ids_in_basic_block:
                                     no_parent = False
                                 add_node(G, func_prefix, a_called, 'local', None)
                                 add_edge(G, func_prefix, a_called, called_func + '_', a_defined, line, 'data')
-                                print(func_prefix+"    "+a_called+"    "+a_defined+"   (local)   ")
-                                #----call---
+                              
                     else:
                         # There is no data flow, so we introduce control flow
                         # (block ref) --[stmt]--> (defined function's first block ref)
@@ -1825,12 +1821,14 @@ def add_stmts_to_graph(G, file, functions_defined_in_file, functions_declared_in
                         add_edge(G, '', block_ref, called_func + '_', '#top_ref', line, 'ctrl')
                         #----call---
                         no_parent = False
-
+                    
+                    # Add call edge
+                    add_node(G, called_func + '_', '#top_ref', 'label', None)
+                    add_edge(G, '', block_ref , called_func + '_', '#top_ref', line, 'call')
+                        
                     # If there is an assignee
                     if assignee is not None:
-                        add_node(G, called_func + '_', '#top_ref', 'label', None)
-                        add_edge(G, func_prefix, assignee , called_func + '_', '#top_ref', line, 'call')
-                       
+                        
                         # Get return statement
                         ret_ = functions_defined_in_file[func_key][2]
                         ret_node_match = re.match(r'ret .* (%?' + rgx.local_id_no_perc + r'|false|true)', ret_)
@@ -1855,7 +1853,6 @@ def add_stmts_to_graph(G, file, functions_defined_in_file, functions_declared_in
                             add_edge(G, '', block_ref, func_prefix, assignee, line, 'path')
 
                     else:  # no assignee
-                        print("no assignee")
                         # If the statement has no parent in the present basic block, connect the paths
                         if no_parent:
                             # (block ref) --[stmt]--> (ad hoc)
@@ -1882,7 +1879,6 @@ def add_stmts_to_graph(G, file, functions_defined_in_file, functions_declared_in
                         add_edge(G, called_func + '_', ret, func_prefix, m_label[1], line, 'ctrl')
 
                 else:
-                    print("undef")
                     # if this function is *NOT* defined in this file (i.e. we don't know its body)
                     # - only declared in this file
                     # - call .* asm
