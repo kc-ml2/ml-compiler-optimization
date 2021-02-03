@@ -1819,7 +1819,6 @@ def add_stmts_to_graph(G, file, functions_defined_in_file, functions_declared_in
                         # (block ref) --[stmt]--> (defined function's first block ref)
                         add_node(G, called_func + '_', '#top_ref', 'label', None)
                         add_edge(G, '', block_ref, called_func + '_', '#top_ref', line, 'ctrl')
-                        #----call---
                         no_parent = False
                     
                     # Add call edge
@@ -2884,9 +2883,9 @@ def construct_xfg_single_raw_folder(params, num_folder):
                 # Source code transformation: abstract statement
                 G = abstract_statements_from_identifiers(G)
 
-                # Save G to file
-                i2v_utils.safe_pickle(G, os.path.join(graph_folder, file_name[:-3] + '_xfg.p'))
-
+                # Save G to json
+                i2v_utils.safe_json(G, os.path.join(graph_folder, file_name[:-3] + '_xfg.json'))
+                
                 # Dump list of statements to be used in construct_vocabulary
                 stmt_list = [e[2]['stmt'] for e in G.edges(data=True)]
                 write_to = os.path.join(transformed_folder, file_name[:-3] + '.p')

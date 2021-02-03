@@ -27,6 +27,9 @@ import pickle
 import datetime
 import re
 
+import json
+from networkx.readwrite import json_graph
+
 
 # Maximum number of bytes to pickle in one chunk
 max_bytes = 2**31 - 1
@@ -46,7 +49,10 @@ def safe_pickle(data, file):
             f.write(pickle_out[i:min(n_bytes, i + max_bytes)])
             count += 1
 
-
+def safe_json(G, file):
+    with open(file, 'w') as f:
+        f.write(json.dumps(json_graph.node_link_data(G)))
+        
 def set_file_signature(param, data_folder, set_from_date_time=False):
     """
     Set file signature to differentiate between embedding trainings
