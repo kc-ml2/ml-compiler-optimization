@@ -29,10 +29,33 @@ import re
 
 import json
 from networkx.readwrite import json_graph
-
+from itertools import chain
 
 # Maximum number of bytes to pickle in one chunk
 max_bytes = 2**31 - 1
+
+def contract_nodes(G, u, v, self_loops=True):
+    H = G.copy()
+    # edge code uses G.edges(v) instead of G.adj[v] to handle multiedges
+   
+    in_edges = (
+        (w if w != v else u, u, d)
+        for w, x, d in G.in_edges(v, data=True)
+        if self_loops or w != u
+    )
+    out_edges = (
+        (u, w if w != v else u, d)
+        for x, w, d in G.out_edges(v, data=True)
+        if self_loops or w != u
+    )
+    new_edges = chain(in_edges, out_edges)
+    v_data = H.nodes[v]
+    H.remove_node(v)
+    H.add_edges_from(new_edges)
+    return H
+
+
+
 
 
 def safe_pickle(data, file):

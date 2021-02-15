@@ -2050,7 +2050,7 @@ def add_stmts_to_graph(G, file, functions_defined_in_file, functions_declared_in
             # Connect to the corresponding #top_refs if there are any
             func_prefix = v[0] + '_'
             if (func_prefix + '#top_ref') in list(G.nodes()):
-                G = nx.contracted_nodes(G, func_block_refs[func_prefix], func_prefix + '#top_ref', False)
+                G = i2v_utils.contract_nodes(G, func_block_refs[func_prefix], func_prefix + '#top_ref', False)
 
     return G
 
