@@ -2,7 +2,7 @@
 <p align="center">
 <img width="700" alt="Screen Shot 2022-06-10 at 2 37 17 PM" src="https://user-images.githubusercontent.com/36752646/176644485-c7e02421-3fcf-4364-905a-d1706e4ca3b9.png">
 </p>
-<p>
+<p align="center">
 <img width="=380" height="304" alt="before optim" src="https://user-images.githubusercontent.com/36752646/176644507-c64dbbf8-36ea-4cd2-b2ee-2611656e9156.png">
 <img width="380" height="304" alt="after optim" src="https://user-images.githubusercontent.com/36752646/176644512-15f9f2d1-8094-4f82-bbf7-18a4b938baa2.png">
 </p>
