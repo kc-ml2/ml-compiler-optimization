@@ -29,11 +29,11 @@ Transform hetergeneous graph to homogeneous graph,
 
 by embedding **node/edge types** in Euclidean space
 
-**Node identifiers** are translated to integer by vocabulary dictionary.
+**Node identifiers** are translated to integer by vocabulary dictionary(`vocab.json` from https://zenodo.org/record/4247595).
 
 **Edge positions** are embedded by positional embedding from original Transformer.
 
-[TODO] find where : `vocab.json` is from somewhere in https://github.com/ChrisCummins {with-different-name}.json, can't find exact location.
+
 
 ## RL 
 
