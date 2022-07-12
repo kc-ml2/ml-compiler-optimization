@@ -1,4 +1,9 @@
 # ml-compiler-optimization
+
+This work has been contributed to : 
+
+https://github.com/facebookresearch/CompilerGym
+
 <p align="center">
 <img width="700" alt="Screen Shot 2022-06-10 at 2 37 17 PM" src="https://user-images.githubusercontent.com/36752646/176644485-c7e02421-3fcf-4364-905a-d1706e4ca3b9.png">
 </p>
