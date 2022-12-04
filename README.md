@@ -60,9 +60,9 @@ implemented with 3 versions
 2. rllib `rllib*.py` - distributed computing
 3. some PPO impl. from github `PPO-PyTorch` - someone from leaderboard refered to it
 
-## Citatation
+## Citation
 ```
-@MISC{marlenv2021,
+@MISC{MLCO,
     author = {Anthony W. Jung},
     title = {Compiler optimization with Programl},
     howpublished = {\url{http://github.com/kc-ml2/ml-comiler-optimization}},

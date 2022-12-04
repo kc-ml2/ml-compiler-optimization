@@ -1,8 +1,6 @@
 from ray.rllib.algorithms.ppo import PPOConfig
 from ray.rllib.algorithms.sac import SACConfig
 
-import common
-
 
 def get_ppo():
     config = PPOConfig()
@@ -20,12 +18,6 @@ def get_ppo():
     ).rollouts(
         # num_envs_per_worker=4,
         num_rollout_workers=0
-    ).environment(
-        env=common.ENV_ID,
-        env_config=common.ENV_CONFIG,
-        disable_env_checking=True
-    ).callbacks(
-        common.Callbacks
     )
     #     .debugging(
     #     logger_config={
@@ -48,12 +40,6 @@ def get_sac():
     ).rollouts(
         num_envs_per_worker=16,
         num_rollout_workers=1
-    ).environment(
-        env=common.ENV_ID,
-        env_config=common.ENV_CONFIG,
-        disable_env_checking=True
-    ).callbacks(
-        common.Callbacks
     )
 
     return config

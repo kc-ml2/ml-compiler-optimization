@@ -14,18 +14,18 @@ import numpy as np
 import compiler_gym
 
 import ray
-from compiler_gym.leaderboard.llvm_instcount import eval_llvm_instcount_policy
 from compiler_gym.util.registration import register
-from compiler_gym.wrappers import (CommandlineWithTerminalAction,
-                                   CycleOverBenchmarks, RandomOrderBenchmarks)
+from compiler_gym.leaderboard.llvm_instcount import eval_llvm_instcount_policy
+from compiler_gym.wrappers import (
+    CommandlineWithTerminalAction, RandomOrderBenchmarks, TimeLimit
+)
 from ray.rllib.algorithms import Algorithm
 from ray.rllib.env import EnvContext
-
-from compopt.wrappers import RllibWrapper
-
 from ray.rllib import BaseEnv, Policy, RolloutWorker
 from ray.rllib.algorithms.callbacks import DefaultCallbacks
-from ray.rllib.evaluation import Episode, EpisodeV2
+from ray.rllib.evaluation import Episode
+from ray.rllib.evaluation.episode_v2 import EpisodeV2
+
 from ray.rllib.models import ModelCatalog
 from ray.rllib.utils.typing import EnvType, PolicyID
 from ray.tune import register_env
@@ -56,9 +56,10 @@ def register_all(config, model_cls=None):
                 list(env.datasets[i].benchmark_uris())
             )
         env = CommandlineWithTerminalAction(env)
+        env = TimeLimit(env, max_episode_steps=1024)
         env = RandomOrderBenchmarks(env, train_benchmarks)
         env = RllibWrapper(env)
-        # env = TimeLimit(env, max_episode_steps=128)
+        
         return env
 
     register_env(
@@ -78,7 +79,6 @@ class Callbacks(DefaultCallbacks):
             env_index: Optional[int] = None,
             **kwargs,
     ) -> None:
-        # worker.env = RandomOrderBenchmarks(sub_environment)
         pass
 
     def on_train_result(
@@ -198,11 +198,19 @@ if __name__ == '__main__':
     from compopt.rllib_model import Model as model_cls
 
     config = configs.get_ppo()
-    config.training(model={'custom_model': model_cls.__name__})
+    config.training(
+        model={'custom_model': model_cls.__name__}
+    ).environment(
+        env=ENV_ID,
+        env_config=ENV_CONFIG,
+        disable_env_checking=True
+    ).callbacks(
+        Callbacks
+    )
     ws = Workspace(
         model_cls=model_cls,
         config=config,
-        ckpt_dir=common.DATA_DIR,
+        ckpt_dir=PROJECT_DIR,
         verbose=True
     )
     try:
