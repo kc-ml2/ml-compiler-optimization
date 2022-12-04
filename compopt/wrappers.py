@@ -1,16 +1,11 @@
 import numpy as np
 
 import gym
-from compiler_gym.spaces import Sequence
 from gym import Wrapper
 from gym.spaces import Box, Tuple
 
-import compiler_gym
-from compiler_gym.datasets import Datasets
-from compiler_gym.wrappers import CommandlineWithTerminalAction, TimeLimit, CompilerEnvWrapper
 
 import networkx as nx
-import walker
 import torch_geometric as pyg
 
 from ray.rllib.utils.spaces.repeated import Repeated
@@ -19,37 +14,9 @@ from compopt.constants import (
     VOCAB, NODE_FEATURES,
     EDGE_FEATURES,
     MAX_TEXT, MAX_TYPE,
-    MAX_FLOW, MAX_POS
+    MAX_FLOW, MAX_POS,
+    MAX_NODES, MAX_EDGES,
 )
-
-MAX_NODES = int(1e4)
-MAX_EDGES = int(5e4)
-DATA = [
-    'cbench-v1',
-    'mibench-v1',
-    'blas-v0',
-    'npb-v0'
-]
-
-
-def make_env(config):
-    # TODO: what if env object is given?
-    env = compiler_gym.make(
-        "llvm-ic-v0",
-        observation_space="Programl",
-        reward_space="IrInstructionCountOz",
-    )
-    # env = TimeLimit(env, 128)
-    env = CommandlineWithTerminalAction(env)
-    env = TimeLimit(env, 1024)  # TODO: rough limit
-    # TODO: conflicts with rllib's evaluator
-    # env = CycleOverBenchmarks(
-    #     env, dataset.benchmarks()
-    # )
-    env = RllibWrapper(env, DATA)
-
-    return env
-
 
 class Dynamic(Repeated):
     def __init__(self, child_space: gym.Space, max_len):
@@ -176,16 +143,8 @@ class RllibWrapper(Wrapper):
     def __init__(
             self,
             env,
-            dataset_ids=None
     ):
         self.env = env
-
-        # if dataset_ids:
-        #     datasets = [env.datasets[i] for i in dataset_ids]
-        #     self.env.datasets = Datasets(datasets)
-        # obs_space = compute_space()
-        # setattr(obs_space, 'name', 'repeated')
-        # self.env.observation.spaces['repeated'] = obs_space
         self.observation_space = compute_space()
 
     def step(self, ac):
@@ -195,18 +154,7 @@ class RllibWrapper(Wrapper):
         return obs, rew, done, info
 
     def reset(self, *args, **kwargs):
-        # self.observation_space = self._compute_space()  # if not child of gym.Space, setter may not work
-        # TODO: can fail
-        # for i in range(128):
-        #     self.env.benchmark = self.env.datasets.random_benchmark(
-        #         weighted=True
-        #     )
-        
         obs = super().reset(*args, **kwargs)
-        # print(obs)
-        # obs = parse_graph(obs)
-        # self.env.observation_space = compute_space()
-        # walks = walker.random_walks(obs, n_walks=15, walk_len=10)
         TRIALS = 10
         for i in range(TRIALS):
             if obs.number_of_nodes() < MAX_NODES or \
