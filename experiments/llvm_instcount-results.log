@@ -1,0 +1,1487 @@
+Read benchmark://cbench-v1 manifest, 23 entries
+Setting benchmark by name: benchmark://cbench-v1/adpcm
+Ending session 0
+Read benchmark://cbench-v1 manifest, 23 entries
+Setting benchmark by name: benchmark://cbench-v1/adpcm
+Ending session 0
+Read benchmark://cbench-v1 manifest, 23 entries
+Setting benchmark by name: benchmark://cbench-v1/adpcm
+Read benchmark://cbench-v1 manifest, 23 entries
+Setting benchmark by name: benchmark://cbench-v1/adpcm
+Ending session 0
+Setting benchmark by name: benchmark://cbench-v1/bitcount
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/blowfish
+Ending session 2
+Setting benchmark by name: benchmark://cbench-v1/bzip2
+Ending session 3
+Setting benchmark by name: benchmark://cbench-v1/crc32
+Ending session 4
+Setting benchmark by name: benchmark://cbench-v1/dijkstra
+Ending session 5
+Setting benchmark by name: benchmark://cbench-v1/ghostscript
+Ending session 6
+Setting benchmark by name: benchmark://cbench-v1/gsm
+Ending session 7
+Setting benchmark by name: benchmark://cbench-v1/ispell
+Ending session 8
+Setting benchmark by name: benchmark://cbench-v1/jpeg-c
+Ending session 9
+Setting benchmark by name: benchmark://cbench-v1/jpeg-d
+Ending session 10
+Setting benchmark by name: benchmark://cbench-v1/lame
+Ending session 11
+Setting benchmark by name: benchmark://cbench-v1/patricia
+Ending session 12
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Ending session 13
+Setting benchmark by name: benchmark://cbench-v1/rijndael
+Ending session 14
+Setting benchmark by name: benchmark://cbench-v1/sha
+Ending session 15
+Setting benchmark by name: benchmark://cbench-v1/stringsearch
+Ending session 16
+Setting benchmark by name: benchmark://cbench-v1/stringsearch2
+Ending session 17
+Setting benchmark by name: benchmark://cbench-v1/susan
+Ending session 18
+Setting benchmark by name: benchmark://cbench-v1/tiff2bw
+Ending session 19
+Setting benchmark by name: benchmark://cbench-v1/tiff2rgba
+Ending session 20
+Setting benchmark by name: benchmark://cbench-v1/tiffdither
+Ending session 21
+Setting benchmark by name: benchmark://cbench-v1/tiffmedian
+Ending session 22
+Setting benchmark by name: benchmark://cbench-v1/adpcm
+Ending session 23
+Setting benchmark by name: benchmark://cbench-v1/bitcount
+Ending session 24
+Setting benchmark by name: benchmark://cbench-v1/blowfish
+Ending session 25
+Setting benchmark by name: benchmark://cbench-v1/bzip2
+Ending session 26
+Setting benchmark by name: benchmark://cbench-v1/crc32
+Ending session 27
+Setting benchmark by name: benchmark://cbench-v1/dijkstra
+Ending session 28
+Setting benchmark by name: benchmark://cbench-v1/ghostscript
+Ending session 29
+Setting benchmark by name: benchmark://cbench-v1/gsm
+Ending session 30
+Setting benchmark by name: benchmark://cbench-v1/ispell
+Ending session 31
+Setting benchmark by name: benchmark://cbench-v1/jpeg-c
+Ending session 32
+Setting benchmark by name: benchmark://cbench-v1/jpeg-d
+Ending session 33
+Setting benchmark by name: benchmark://cbench-v1/lame
+Ending session 34
+Setting benchmark by name: benchmark://cbench-v1/patricia
+Ending session 35
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Ending session 36
+Setting benchmark by name: benchmark://cbench-v1/rijndael
+Ending session 37
+Setting benchmark by name: benchmark://cbench-v1/sha
+Ending session 38
+Setting benchmark by name: benchmark://cbench-v1/stringsearch
+Ending session 39
+Setting benchmark by name: benchmark://cbench-v1/stringsearch2
+Ending session 40
+Setting benchmark by name: benchmark://cbench-v1/susan
+Ending session 41
+Setting benchmark by name: benchmark://cbench-v1/tiff2bw
+Ending session 42
+Setting benchmark by name: benchmark://cbench-v1/tiff2rgba
+Ending session 43
+Setting benchmark by name: benchmark://cbench-v1/tiffdither
+Ending session 44
+Setting benchmark by name: benchmark://cbench-v1/tiffmedian
+Ending session 45
+Setting benchmark by name: benchmark://cbench-v1/adpcm
+Ending session 46
+Setting benchmark by name: benchmark://cbench-v1/bitcount
+Ending session 47
+Setting benchmark by name: benchmark://cbench-v1/blowfish
+Ending session 48
+Setting benchmark by name: benchmark://cbench-v1/bzip2
+Ending session 49
+Setting benchmark by name: benchmark://cbench-v1/crc32
+Ending session 50
+Setting benchmark by name: benchmark://cbench-v1/dijkstra
+Ending session 51
+Setting benchmark by name: benchmark://cbench-v1/ghostscript
+Ending session 52
+Setting benchmark by name: benchmark://cbench-v1/gsm
+Ending session 53
+Setting benchmark by name: benchmark://cbench-v1/ispell
+Ending session 54
+Setting benchmark by name: benchmark://cbench-v1/jpeg-c
+Ending session 55
+Setting benchmark by name: benchmark://cbench-v1/jpeg-d
+Ending session 56
+Setting benchmark by name: benchmark://cbench-v1/lame
+Ending session 57
+Setting benchmark by name: benchmark://cbench-v1/patricia
+Ending session 58
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Ending session 59
+Setting benchmark by name: benchmark://cbench-v1/rijndael
+Ending session 60
+Setting benchmark by name: benchmark://cbench-v1/sha
+Ending session 61
+Setting benchmark by name: benchmark://cbench-v1/stringsearch
+Ending session 62
+Setting benchmark by name: benchmark://cbench-v1/stringsearch2
+Ending session 63
+Setting benchmark by name: benchmark://cbench-v1/susan
+Ending session 64
+Setting benchmark by name: benchmark://cbench-v1/tiff2bw
+Ending session 65
+Setting benchmark by name: benchmark://cbench-v1/tiff2rgba
+Ending session 66
+Setting benchmark by name: benchmark://cbench-v1/tiffdither
+Ending session 67
+Setting benchmark by name: benchmark://cbench-v1/tiffmedian
+Ending session 68
+Setting benchmark by name: benchmark://cbench-v1/adpcm
+Ending session 69
+Setting benchmark by name: benchmark://cbench-v1/bitcount
+Ending session 70
+Setting benchmark by name: benchmark://cbench-v1/blowfish
+Ending session 71
+Setting benchmark by name: benchmark://cbench-v1/bzip2
+Ending session 72
+Setting benchmark by name: benchmark://cbench-v1/crc32
+Ending session 73
+Setting benchmark by name: benchmark://cbench-v1/dijkstra
+Ending session 74
+Setting benchmark by name: benchmark://cbench-v1/ghostscript
+Ending session 75
+Setting benchmark by name: benchmark://cbench-v1/gsm
+Ending session 76
+Setting benchmark by name: benchmark://cbench-v1/ispell
+Ending session 77
+Setting benchmark by name: benchmark://cbench-v1/jpeg-c
+Ending session 78
+Setting benchmark by name: benchmark://cbench-v1/jpeg-d
+Ending session 79
+Setting benchmark by name: benchmark://cbench-v1/lame
+Ending session 80
+Setting benchmark by name: benchmark://cbench-v1/patricia
+Ending session 81
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Ending session 82
+Setting benchmark by name: benchmark://cbench-v1/rijndael
+Ending session 83
+Setting benchmark by name: benchmark://cbench-v1/sha
+Ending session 84
+Setting benchmark by name: benchmark://cbench-v1/stringsearch
+Ending session 85
+Setting benchmark by name: benchmark://cbench-v1/stringsearch2
+Ending session 86
+Setting benchmark by name: benchmark://cbench-v1/susan
+Ending session 87
+Setting benchmark by name: benchmark://cbench-v1/tiff2bw
+Ending session 88
+Setting benchmark by name: benchmark://cbench-v1/tiff2rgba
+Ending session 89
+Setting benchmark by name: benchmark://cbench-v1/tiffdither
+Ending session 90
+Setting benchmark by name: benchmark://cbench-v1/tiffmedian
+Ending session 91
+Setting benchmark by name: benchmark://cbench-v1/adpcm
+Ending session 92
+Setting benchmark by name: benchmark://cbench-v1/bitcount
+Ending session 93
+Setting benchmark by name: benchmark://cbench-v1/blowfish
+Ending session 94
+Setting benchmark by name: benchmark://cbench-v1/bzip2
+Ending session 95
+Setting benchmark by name: benchmark://cbench-v1/crc32
+Ending session 96
+Setting benchmark by name: benchmark://cbench-v1/dijkstra
+Ending session 97
+Setting benchmark by name: benchmark://cbench-v1/ghostscript
+Ending session 98
+Setting benchmark by name: benchmark://cbench-v1/gsm
+Ending session 99
+Setting benchmark by name: benchmark://cbench-v1/ispell
+Ending session 100
+Setting benchmark by name: benchmark://cbench-v1/jpeg-c
+Ending session 101
+Setting benchmark by name: benchmark://cbench-v1/jpeg-d
+Ending session 102
+Setting benchmark by name: benchmark://cbench-v1/lame
+Ending session 103
+Setting benchmark by name: benchmark://cbench-v1/patricia
+Ending session 104
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Ending session 105
+Setting benchmark by name: benchmark://cbench-v1/rijndael
+Ending session 106
+Setting benchmark by name: benchmark://cbench-v1/sha
+Ending session 107
+Setting benchmark by name: benchmark://cbench-v1/stringsearch
+Ending session 108
+Setting benchmark by name: benchmark://cbench-v1/stringsearch2
+Ending session 109
+Setting benchmark by name: benchmark://cbench-v1/susan
+Ending session 110
+Setting benchmark by name: benchmark://cbench-v1/tiff2bw
+Ending session 111
+Setting benchmark by name: benchmark://cbench-v1/tiff2rgba
+Ending session 112
+Setting benchmark by name: benchmark://cbench-v1/tiffdither
+Ending session 113
+Setting benchmark by name: benchmark://cbench-v1/tiffmedian
+Ending session 114
+Setting benchmark by name: benchmark://cbench-v1/adpcm
+Ending session 115
+Setting benchmark by name: benchmark://cbench-v1/bitcount
+Ending session 116
+Setting benchmark by name: benchmark://cbench-v1/blowfish
+Ending session 117
+Setting benchmark by name: benchmark://cbench-v1/bzip2
+Ending session 118
+Setting benchmark by name: benchmark://cbench-v1/crc32
+Ending session 119
+Setting benchmark by name: benchmark://cbench-v1/dijkstra
+Ending session 120
+Setting benchmark by name: benchmark://cbench-v1/ghostscript
+Ending session 121
+Setting benchmark by name: benchmark://cbench-v1/gsm
+Ending session 122
+Setting benchmark by name: benchmark://cbench-v1/ispell
+Ending session 123
+Setting benchmark by name: benchmark://cbench-v1/jpeg-c
+Ending session 124
+Setting benchmark by name: benchmark://cbench-v1/jpeg-d
+Ending session 125
+Setting benchmark by name: benchmark://cbench-v1/lame
+Ending session 126
+Setting benchmark by name: benchmark://cbench-v1/patricia
+Ending session 127
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Ending session 128
+Setting benchmark by name: benchmark://cbench-v1/rijndael
+Ending session 129
+Setting benchmark by name: benchmark://cbench-v1/sha
+Ending session 130
+Setting benchmark by name: benchmark://cbench-v1/stringsearch
+Ending session 131
+Setting benchmark by name: benchmark://cbench-v1/stringsearch2
+Ending session 132
+Setting benchmark by name: benchmark://cbench-v1/susan
+Ending session 133
+Setting benchmark by name: benchmark://cbench-v1/tiff2bw
+Ending session 134
+Setting benchmark by name: benchmark://cbench-v1/tiff2rgba
+Ending session 135
+Setting benchmark by name: benchmark://cbench-v1/tiffdither
+Ending session 136
+Setting benchmark by name: benchmark://cbench-v1/tiffmedian
+Ending session 137
+Setting benchmark by name: benchmark://cbench-v1/adpcm
+Ending session 138
+Setting benchmark by name: benchmark://cbench-v1/bitcount
+Ending session 139
+Setting benchmark by name: benchmark://cbench-v1/blowfish
+Ending session 140
+Setting benchmark by name: benchmark://cbench-v1/bzip2
+Ending session 141
+Setting benchmark by name: benchmark://cbench-v1/crc32
+Ending session 142
+Setting benchmark by name: benchmark://cbench-v1/dijkstra
+Ending session 143
+Setting benchmark by name: benchmark://cbench-v1/ghostscript
+Ending session 144
+Setting benchmark by name: benchmark://cbench-v1/gsm
+Ending session 145
+Setting benchmark by name: benchmark://cbench-v1/ispell
+Ending session 146
+Setting benchmark by name: benchmark://cbench-v1/jpeg-c
+Ending session 147
+Setting benchmark by name: benchmark://cbench-v1/jpeg-d
+Ending session 148
+Setting benchmark by name: benchmark://cbench-v1/lame
+Ending session 149
+Setting benchmark by name: benchmark://cbench-v1/patricia
+Ending session 150
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Ending session 151
+Setting benchmark by name: benchmark://cbench-v1/rijndael
+Ending session 152
+Setting benchmark by name: benchmark://cbench-v1/sha
+Ending session 153
+Setting benchmark by name: benchmark://cbench-v1/stringsearch
+Ending session 154
+Setting benchmark by name: benchmark://cbench-v1/stringsearch2
+Ending session 155
+Setting benchmark by name: benchmark://cbench-v1/susan
+Ending session 156
+Setting benchmark by name: benchmark://cbench-v1/tiff2bw
+Ending session 157
+Setting benchmark by name: benchmark://cbench-v1/tiff2rgba
+Ending session 158
+Setting benchmark by name: benchmark://cbench-v1/tiffdither
+Ending session 159
+Setting benchmark by name: benchmark://cbench-v1/tiffmedian
+Ending session 160
+Setting benchmark by name: benchmark://cbench-v1/adpcm
+Ending session 161
+Setting benchmark by name: benchmark://cbench-v1/bitcount
+Ending session 162
+Setting benchmark by name: benchmark://cbench-v1/blowfish
+Ending session 163
+Setting benchmark by name: benchmark://cbench-v1/bzip2
+Ending session 164
+Setting benchmark by name: benchmark://cbench-v1/crc32
+Ending session 165
+Setting benchmark by name: benchmark://cbench-v1/dijkstra
+Ending session 166
+Setting benchmark by name: benchmark://cbench-v1/ghostscript
+Ending session 167
+Setting benchmark by name: benchmark://cbench-v1/gsm
+Ending session 168
+Setting benchmark by name: benchmark://cbench-v1/ispell
+Ending session 169
+Setting benchmark by name: benchmark://cbench-v1/jpeg-c
+Ending session 170
+Setting benchmark by name: benchmark://cbench-v1/jpeg-d
+Ending session 171
+Setting benchmark by name: benchmark://cbench-v1/lame
+Ending session 172
+Setting benchmark by name: benchmark://cbench-v1/patricia
+Ending session 173
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Ending session 174
+Setting benchmark by name: benchmark://cbench-v1/rijndael
+Ending session 175
+Setting benchmark by name: benchmark://cbench-v1/sha
+Ending session 176
+Setting benchmark by name: benchmark://cbench-v1/stringsearch
+Ending session 177
+Setting benchmark by name: benchmark://cbench-v1/stringsearch2
+Ending session 178
+Setting benchmark by name: benchmark://cbench-v1/susan
+Ending session 179
+Setting benchmark by name: benchmark://cbench-v1/tiff2bw
+Ending session 180
+Setting benchmark by name: benchmark://cbench-v1/tiff2rgba
+Ending session 181
+Setting benchmark by name: benchmark://cbench-v1/tiffdither
+Ending session 182
+Setting benchmark by name: benchmark://cbench-v1/tiffmedian
+Ending session 183
+Setting benchmark by name: benchmark://cbench-v1/adpcm
+Ending session 184
+Setting benchmark by name: benchmark://cbench-v1/bitcount
+Ending session 185
+Setting benchmark by name: benchmark://cbench-v1/blowfish
+Ending session 186
+Setting benchmark by name: benchmark://cbench-v1/bzip2
+Ending session 187
+Setting benchmark by name: benchmark://cbench-v1/crc32
+Ending session 188
+Setting benchmark by name: benchmark://cbench-v1/dijkstra
+Ending session 189
+Setting benchmark by name: benchmark://cbench-v1/ghostscript
+Ending session 190
+Setting benchmark by name: benchmark://cbench-v1/gsm
+Ending session 191
+Setting benchmark by name: benchmark://cbench-v1/ispell
+Ending session 192
+Setting benchmark by name: benchmark://cbench-v1/jpeg-c
+Ending session 193
+Setting benchmark by name: benchmark://cbench-v1/jpeg-d
+Ending session 194
+Setting benchmark by name: benchmark://cbench-v1/lame
+Ending session 195
+Setting benchmark by name: benchmark://cbench-v1/patricia
+Ending session 196
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Ending session 197
+Setting benchmark by name: benchmark://cbench-v1/rijndael
+Ending session 198
+Setting benchmark by name: benchmark://cbench-v1/sha
+Ending session 199
+Setting benchmark by name: benchmark://cbench-v1/stringsearch
+Ending session 200
+Setting benchmark by name: benchmark://cbench-v1/stringsearch2
+Ending session 201
+Setting benchmark by name: benchmark://cbench-v1/susan
+Ending session 202
+Setting benchmark by name: benchmark://cbench-v1/tiff2bw
+Ending session 203
+Setting benchmark by name: benchmark://cbench-v1/tiff2rgba
+Ending session 204
+Setting benchmark by name: benchmark://cbench-v1/tiffdither
+Ending session 205
+Setting benchmark by name: benchmark://cbench-v1/tiffmedian
+Ending session 206
+Setting benchmark by name: benchmark://cbench-v1/adpcm
+Ending session 207
+Setting benchmark by name: benchmark://cbench-v1/bitcount
+Ending session 208
+Setting benchmark by name: benchmark://cbench-v1/blowfish
+Ending session 209
+Setting benchmark by name: benchmark://cbench-v1/bzip2
+Ending session 210
+Setting benchmark by name: benchmark://cbench-v1/crc32
+Ending session 211
+Setting benchmark by name: benchmark://cbench-v1/dijkstra
+Ending session 212
+Setting benchmark by name: benchmark://cbench-v1/ghostscript
+Ending session 213
+Setting benchmark by name: benchmark://cbench-v1/gsm
+Ending session 214
+Setting benchmark by name: benchmark://cbench-v1/ispell
+Ending session 215
+Setting benchmark by name: benchmark://cbench-v1/jpeg-c
+Ending session 216
+Setting benchmark by name: benchmark://cbench-v1/jpeg-d
+Ending session 217
+Setting benchmark by name: benchmark://cbench-v1/lame
+Ending session 218
+Setting benchmark by name: benchmark://cbench-v1/patricia
+Ending session 219
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Ending session 220
+Setting benchmark by name: benchmark://cbench-v1/rijndael
+Ending session 221
+Setting benchmark by name: benchmark://cbench-v1/sha
+Ending session 222
+Setting benchmark by name: benchmark://cbench-v1/stringsearch
+Ending session 223
+Setting benchmark by name: benchmark://cbench-v1/stringsearch2
+Ending session 224
+Setting benchmark by name: benchmark://cbench-v1/susan
+Ending session 225
+Setting benchmark by name: benchmark://cbench-v1/tiff2bw
+Ending session 226
+Setting benchmark by name: benchmark://cbench-v1/tiff2rgba
+Ending session 227
+Setting benchmark by name: benchmark://cbench-v1/tiffdither
+Ending session 228
+Setting benchmark by name: benchmark://cbench-v1/tiffmedian
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-439425-fb90 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-586915-9639 --alsologtostderr -v=1 --logbuflevel=-1`
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-592405-dec7 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/bzip2
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-695599-e7e3 --alsologtostderr -v=1 --logbuflevel=-1`
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-598108-f392 --alsologtostderr -v=1 --logbuflevel=-1`
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-630955-5174 --alsologtostderr -v=1 --logbuflevel=-1`
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-638601-8820 --alsologtostderr -v=1 --logbuflevel=-1`
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-668380-e08b --alsologtostderr -v=1 --logbuflevel=-1`
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-666198-cc54 --alsologtostderr -v=1 --logbuflevel=-1`
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-684866-ad73 --alsologtostderr -v=1 --logbuflevel=-1`
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-701617-af6a --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-591423-0802 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/stringsearch
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-716647-887a --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-723255-6cb7 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/tiff2rgba
+Setting benchmark by name: benchmark://cbench-v1/tiffdither
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-731309-f769 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-756570-3034 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-760782-ae7b --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-775483-4d2c --alsologtostderr -v=1 --logbuflevel=-1`
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-782893-cf3e --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/bitcount
+Setting benchmark by name: benchmark://cbench-v1/ispell
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-621445-6730 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-625632-3263 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/jpeg-c
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-654384-28ff --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-649649-d292 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/sha
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-701869-7578 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-715231-228e --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/jpeg-d
+Setting benchmark: benchmark://cbench-v1/stringsearch
+Setting benchmark by name: benchmark://cbench-v1/bitcount
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-720503-503b --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Ending session 1
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-728298-068e --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-765037-28b5 --alsologtostderr -v=1 --logbuflevel=-1`
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-779324-f3f7 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark: benchmark://cbench-v1/bitcount
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-622208-5eb4 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-651831-76ee --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Ending session 1
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-688857-15b6 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/rijndael
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-720648-66b6 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark: benchmark://cbench-v1/sha
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-759656-4e89 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/susan
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-773250-9c21 --alsologtostderr -v=1 --logbuflevel=-1`
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-787494-feb4 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/tiff2bw
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-676611-4807 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark: benchmark://cbench-v1/bitcount
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-701161-ada3 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/stringsearch
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-711511-aafb --alsologtostderr -v=1 --logbuflevel=-1`
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/sha
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-717863-ce62 --alsologtostderr -v=1 --logbuflevel=-1`
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-642318-270f --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/ghostscript
+Setting benchmark by name: benchmark://cbench-v1/crc32
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-660269-c317 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/jpeg-d
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-588609-c44d --alsologtostderr -v=1 --logbuflevel=-1`
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-730288-4302 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-758622-b923 --alsologtostderr -v=1 --logbuflevel=-1`
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-773110-f8fd --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/bitcount
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-628535-d8ce --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-663202-9db2 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/tiff2bw
+Setting benchmark by name: benchmark://cbench-v1/blowfish
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-702297-6b92 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-794558-74a8 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark: benchmark://cbench-v1/rijndael
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-670860-6a33 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark: benchmark://cbench-v1/crc32
+Setting benchmark: benchmark://cbench-v1/sha
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-707332-a569 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Ending session 1
+Ending session 1
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-633561-d2b7 --alsologtostderr -v=1 --logbuflevel=-1`
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/sha
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-707001-c948 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/sha
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-780403-a73b --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-643381-df54 --alsologtostderr -v=1 --logbuflevel=-1`
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-754421-f7ad --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/ghostscript
+Setting benchmark by name: benchmark://cbench-v1/bzip2
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-671394-c4a3 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/bzip2
+Setting benchmark by name: benchmark://cbench-v1/bitcount
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-770407-b075 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/tiffdither
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-712782-7c29 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/patricia
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-684134-5c27 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-735245-78f8 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark: benchmark://cbench-v1/blowfish
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-647656-5ce8 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark: benchmark://cbench-v1/sha
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-723757-9ff6 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/tiffdither
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Ending session 1
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021740-766785-5367 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/sha
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/patricia
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/crc32
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/rijndael
+Setting benchmark by name: benchmark://cbench-v1/crc32
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/ghostscript
+Setting benchmark: benchmark://cbench-v1/crc32
+Setting benchmark: benchmark://cbench-v1/patricia
+Setting benchmark by name: benchmark://cbench-v1/sha
+Setting benchmark: benchmark://cbench-v1/susan
+Setting benchmark: benchmark://cbench-v1/patricia
+Setting benchmark: benchmark://cbench-v1/sha
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Ending session 1
+Ending session 1
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/ghostscript
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/tiff2rgba
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/ghostscript
+Setting benchmark: benchmark://cbench-v1/ispell
+Setting benchmark by name: benchmark://cbench-v1/tiff2rgba
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/dijkstra
+Setting benchmark by name: benchmark://cbench-v1/tiff2bw
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/rijndael
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/bzip2
+Setting benchmark by name: benchmark://cbench-v1/blowfish
+Setting benchmark by name: benchmark://cbench-v1/dijkstra
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/bitcount
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/sha
+Setting benchmark by name: benchmark://cbench-v1/jpeg-c
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/tiffmedian
+Setting benchmark by name: benchmark://cbench-v1/blowfish
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/stringsearch
+Setting benchmark by name: benchmark://cbench-v1/tiff2bw
+Setting benchmark by name: benchmark://cbench-v1/crc32
+Setting benchmark by name: benchmark://cbench-v1/ghostscript
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/patricia
+Setting benchmark by name: benchmark://cbench-v1/susan
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/sha
+Setting benchmark by name: benchmark://cbench-v1/patricia
+Setting benchmark by name: benchmark://cbench-v1/gsm
+Setting benchmark by name: benchmark://cbench-v1/jpeg-d
+Setting benchmark by name: benchmark://cbench-v1/dijkstra
+Setting benchmark by name: benchmark://cbench-v1/tiff2rgba
+Setting benchmark by name: benchmark://cbench-v1/patricia
+Setting benchmark by name: benchmark://cbench-v1/bzip2
+Setting benchmark by name: benchmark://cbench-v1/ispell
+Setting benchmark by name: benchmark://cbench-v1/tiff2bw
+Setting benchmark by name: benchmark://cbench-v1/tiff2rgba
+Setting benchmark by name: benchmark://cbench-v1/adpcm
+Setting benchmark by name: benchmark://cbench-v1/tiff2rgba
+Setting benchmark by name: benchmark://cbench-v1/dijkstra
+Setting benchmark by name: benchmark://cbench-v1/blowfish
+Setting benchmark by name: benchmark://cbench-v1/susan
+Setting benchmark by name: benchmark://cbench-v1/tiff2bw
+Setting benchmark by name: benchmark://cbench-v1/jpeg-d
+Setting benchmark: benchmark://cbench-v1/dijkstra
+Setting benchmark: benchmark://cbench-v1/dijkstra
+Ending session 1
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/dijkstra
+Setting benchmark by name: benchmark://cbench-v1/dijkstra
+Setting benchmark: benchmark://cbench-v1/bitcount
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/bitcount
+Setting benchmark: benchmark://cbench-v1/qsort
+Setting benchmark: benchmark://cbench-v1/adpcm
+Ending session 1
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/adpcm
+Setting benchmark: benchmark://cbench-v1/qsort
+Setting benchmark: benchmark://cbench-v1/dijkstra
+Setting benchmark: benchmark://cbench-v1/stringsearch
+Ending session 1
+Setting benchmark: benchmark://cbench-v1/dijkstra
+Setting benchmark: benchmark://cbench-v1/patricia
+Ending session 1
+Ending session 1
+Ending session 1
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark: benchmark://cbench-v1/blowfish
+Setting benchmark by name: benchmark://cbench-v1/dijkstra
+Setting benchmark by name: benchmark://cbench-v1/stringsearch
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/dijkstra
+Setting benchmark by name: benchmark://cbench-v1/blowfish
+Setting benchmark by name: benchmark://cbench-v1/patricia
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021744-086444-4de8 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark: benchmark://cbench-v1/rijndael
+Setting benchmark: benchmark://cbench-v1/blowfish
+Ending session 1
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/rijndael
+Setting benchmark by name: benchmark://cbench-v1/blowfish
+Setting benchmark: benchmark://cbench-v1/bzip2
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/bzip2
+Setting benchmark by name: benchmark://cbench-v1/lame
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021744-446317-afbb --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/tiffdither
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021744-860787-76ad --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/susan
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021745-143886-9283 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark: benchmark://cbench-v1/gsm
+Ending session 1
+Setting benchmark: benchmark://cbench-v1/susan
+Setting benchmark by name: benchmark://cbench-v1/gsm
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/susan
+Setting benchmark by name: benchmark://cbench-v1/susan
+Setting benchmark: benchmark://cbench-v1/susan
+Setting benchmark: benchmark://cbench-v1/bzip2
+Ending session 1
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/susan
+Setting benchmark by name: benchmark://cbench-v1/bzip2
+Setting benchmark: benchmark://cbench-v1/susan
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/susan
+Setting benchmark: benchmark://cbench-v1/tiffdither
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/tiffdither
+Setting benchmark: benchmark://cbench-v1/bzip2
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/bzip2
+Setting benchmark: benchmark://cbench-v1/jpeg-c
+Ending session 1
+Setting benchmark: benchmark://cbench-v1/tiff2rgba
+Setting benchmark by name: benchmark://cbench-v1/jpeg-c
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/tiff2rgba
+Setting benchmark: benchmark://cbench-v1/bzip2
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/bzip2
+Setting benchmark: benchmark://cbench-v1/jpeg-d
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/jpeg-d
+Setting benchmark: benchmark://cbench-v1/bzip2
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/bzip2
+Setting benchmark: benchmark://cbench-v1/tiff2bw
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/tiff2bw
+Setting benchmark: benchmark://cbench-v1/tiffdither
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/tiffdither
+Setting benchmark: benchmark://cbench-v1/jpeg-d
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/jpeg-d
+Setting benchmark: benchmark://cbench-v1/tiff2bw
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/tiff2bw
+Setting benchmark: benchmark://cbench-v1/tiffdither
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/tiffdither
+Setting benchmark: benchmark://cbench-v1/tiff2rgba
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/tiff2rgba
+Setting benchmark: benchmark://cbench-v1/tiff2bw
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/tiff2bw
+Setting benchmark: benchmark://cbench-v1/tiff2bw
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/tiff2bw
+Setting benchmark: benchmark://cbench-v1/jpeg-d
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/jpeg-d
+Setting benchmark: benchmark://cbench-v1/tiff2rgba
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/tiff2rgba
+Setting benchmark: benchmark://cbench-v1/jpeg-d
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/jpeg-d
+Setting benchmark: benchmark://cbench-v1/tiff2bw
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/tiff2bw
+Setting benchmark: benchmark://cbench-v1/tiff2bw
+Ending session 1
+Setting benchmark: benchmark://cbench-v1/tiff2rgba
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/tiff2bw
+Setting benchmark by name: benchmark://cbench-v1/tiff2rgba
+Setting benchmark: benchmark://cbench-v1/jpeg-c
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/jpeg-c
+Setting benchmark: benchmark://cbench-v1/tiff2rgba
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/tiff2rgba
+Setting benchmark: benchmark://cbench-v1/tiffmedian
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/tiffmedian
+Setting benchmark: benchmark://cbench-v1/tiff2rgba
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/tiff2rgba
+Setting benchmark: benchmark://cbench-v1/tiffdither
+Setting benchmark: benchmark://cbench-v1/lame
+Ending session 1
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/lame
+Setting benchmark by name: benchmark://cbench-v1/tiffdither
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021752-496257-5342 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/blowfish
+Setting benchmark: benchmark://cbench-v1/blowfish
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/blowfish
+Setting benchmark: benchmark://cbench-v1/ghostscript
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/ghostscript
+Setting benchmark: benchmark://cbench-v1/ghostscript
+Ending session 1
+Setting benchmark: benchmark://cbench-v1/ghostscript
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/ghostscript
+Setting benchmark by name: benchmark://cbench-v1/ghostscript
+Setting benchmark: benchmark://cbench-v1/ghostscript
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/ghostscript
+Setting benchmark: benchmark://cbench-v1/ghostscript
+Ending session 1
+Setting benchmark: benchmark://cbench-v1/ghostscript
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/ghostscript
+Setting benchmark by name: benchmark://cbench-v1/ghostscript
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021825-393216-7ffe --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/tiff2bw
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021830-372451-58df --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/bitcount
+Setting benchmark: benchmark://cbench-v1/tiff2bw
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/tiff2bw
+Setting benchmark: benchmark://cbench-v1/bitcount
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/bitcount
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021832-203255-4ece --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/jpeg-d
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021832-436107-6ead --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/bitcount
+Setting benchmark: benchmark://cbench-v1/bitcount
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/bitcount
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021833-248302-2862 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/stringsearch2
+Setting benchmark: benchmark://cbench-v1/stringsearch2
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/stringsearch2
+Setting benchmark: benchmark://cbench-v1/jpeg-d
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/jpeg-d
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1113T021841-809000-be2a --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/sha
+Setting benchmark: benchmark://cbench-v1/sha
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/sha
+Setting benchmark by name: benchmark://cbench-v1/adpcm
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-301743-eff9 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-519706-cf20 --alsologtostderr -v=1 --logbuflevel=-1`
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-519876-61ad --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/lame
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-534333-aaa4 --alsologtostderr -v=1 --logbuflevel=-1`
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-543718-29d1 --alsologtostderr -v=1 --logbuflevel=-1`
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-537604-9d58 --alsologtostderr -v=1 --logbuflevel=-1`
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-603939-b32a --alsologtostderr -v=1 --logbuflevel=-1`
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-681502-dea2 --alsologtostderr -v=1 --logbuflevel=-1`
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-611712-9fc5 --alsologtostderr -v=1 --logbuflevel=-1`
+Connection attempt 1 = FutureTimeoutError 
+Connection attempt 1 = FutureTimeoutError 
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-701328-131f --alsologtostderr -v=1 --logbuflevel=-1`
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-727605-a058 --alsologtostderr -v=1 --logbuflevel=-1`
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-734463-6921 --alsologtostderr -v=1 --logbuflevel=-1`
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-768619-cbf2 --alsologtostderr -v=1 --logbuflevel=-1`
+Connection attempt 1 = FutureTimeoutError 
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-775473-da94 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-781360-072e --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-527150-f1c9 --alsologtostderr -v=1 --logbuflevel=-1`
+Connection attempt 1 = FutureTimeoutError 
+Connection attempt 2 = FutureTimeoutError 
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-788648-b81c --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-854954-fb84 --alsologtostderr -v=1 --logbuflevel=-1`
+Connection attempt 1 = FutureTimeoutError 
+Connection attempt 1 = FutureTimeoutError 
+Connection attempt 1 = FutureTimeoutError 
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-866950-0740 --alsologtostderr -v=1 --logbuflevel=-1`
+Connection attempt 2 = FutureTimeoutError 
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Connection attempt 3 = FutureTimeoutError 
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-801876-8e39 --alsologtostderr -v=1 --logbuflevel=-1`
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-871843-c15b --alsologtostderr -v=1 --logbuflevel=-1`
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-885364-bad9 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/bitcount
+Setting benchmark by name: benchmark://cbench-v1/ispell
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-540442-3ae9 --alsologtostderr -v=1 --logbuflevel=-1`
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-689908-0621 --alsologtostderr -v=1 --logbuflevel=-1`
+Connection attempt 3 = FutureTimeoutError 
+Connection attempt 1 = FutureTimeoutError 
+Connection attempt 4 = FutureTimeoutError 
+Setting benchmark by name: benchmark://cbench-v1/lame
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-720194-157f --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-717566-6c1f --alsologtostderr -v=1 --logbuflevel=-1`
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-734962-14a1 --alsologtostderr -v=1 --logbuflevel=-1`
+Connection attempt 1 = FutureTimeoutError 
+Setting benchmark by name: benchmark://cbench-v1/stringsearch
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-755285-2daa --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/gsm
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-749927-5366 --alsologtostderr -v=1 --logbuflevel=-1`
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-781844-77ed --alsologtostderr -v=1 --logbuflevel=-1`
+Connection attempt 1 = FutureTimeoutError 
+Connection attempt 2 = FutureTimeoutError 
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-715893-08a0 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark: benchmark://cbench-v1/bitcount
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Connection attempt 2 = FutureTimeoutError 
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-791307-1f8c --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Connection attempt 1 = FutureTimeoutError 
+Connection attempt 1 = FutureTimeoutError 
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-803912-b93f --alsologtostderr -v=1 --logbuflevel=-1`
+Connection attempt 1 = FutureTimeoutError 
+Connection attempt 1 = FutureTimeoutError 
+Connection attempt 1 = FutureTimeoutError 
+Connection attempt 1 = FutureTimeoutError 
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-871676-a963 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Connection attempt 1 = FutureTimeoutError 
+Connection attempt 2 = FutureTimeoutError 
+Connection attempt 3 = FutureTimeoutError 
+Setting benchmark: benchmark://cbench-v1/stringsearch
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-882777-1579 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark: benchmark://cbench-v1/qsort
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-594781-f179 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/patricia
+Connection attempt 1 = FutureTimeoutError 
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-689763-8517 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-747148-82b9 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-758522-5ebe --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/tiff2rgba
+Ending session 1
+Ending session 1
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-771767-5ed2 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/adpcm
+Connection attempt 1 = FutureTimeoutError 
+Setting benchmark by name: benchmark://cbench-v1/tiff2bw
+Connection attempt 1 = FutureTimeoutError 
+Connection attempt 2 = FutureTimeoutError 
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-524803-6a75 --alsologtostderr -v=1 --logbuflevel=-1`
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-796617-a5a1 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-867408-8f68 --alsologtostderr -v=1 --logbuflevel=-1`
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-604857-d845 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark: benchmark://cbench-v1/patricia
+Connection attempt 2 = FutureTimeoutError 
+Connection attempt 2 = FutureTimeoutError 
+Setting benchmark by name: benchmark://cbench-v1/ispell
+Connection attempt 3 = FutureTimeoutError 
+Setting benchmark: benchmark://cbench-v1/adpcm
+Connection attempt 1 = FutureTimeoutError 
+Setting benchmark: benchmark://cbench-v1/gsm
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-711302-2113 --alsologtostderr -v=1 --logbuflevel=-1`
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-768007-3551 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-776671-fac6 --alsologtostderr -v=1 --logbuflevel=-1`
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-784623-7c0d --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-788312-4b07 --alsologtostderr -v=1 --logbuflevel=-1`
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-801583-c530 --alsologtostderr -v=1 --logbuflevel=-1`
+Connection attempt 1 = FutureTimeoutError 
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Ending session 1
+Connection attempt 1 = FutureTimeoutError 
+Connection attempt 1 = FutureTimeoutError 
+Setting benchmark: benchmark://cbench-v1/ispell
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Ending session 1
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-695295-d316 --alsologtostderr -v=1 --logbuflevel=-1`
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-753150-e8a9 --alsologtostderr -v=1 --logbuflevel=-1`
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-751735-dc9b --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-767862-f58d --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Ending session 1
+Connection attempt 1 = FutureTimeoutError 
+Connection attempt 1 = FutureTimeoutError 
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-746710-cf2d --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/jpeg-d
+Connection attempt 1 = FutureTimeoutError 
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-604164-6642 --alsologtostderr -v=1 --logbuflevel=-1`
+Connection attempt 1 = FutureTimeoutError 
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Connection attempt 2 = FutureTimeoutError 
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Ending session 1
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-762766-e093 --alsologtostderr -v=1 --logbuflevel=-1`
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-528360-49d7 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-589913-71ad --alsologtostderr -v=1 --logbuflevel=-1`
+Connection attempt 2 = FutureTimeoutError 
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-717043-2e2c --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-688246-faae --alsologtostderr -v=1 --logbuflevel=-1`
+Connection attempt 1 = FutureTimeoutError 
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Connection attempt 3 = FutureTimeoutError 
+Connection attempt 2 = FutureTimeoutError 
+Setting benchmark by name: benchmark://cbench-v1/bzip2
+Setting benchmark by name: benchmark://cbench-v1/crc32
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-807828-94b8 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Connection attempt 3 = FutureTimeoutError 
+Connection attempt 1 = FutureTimeoutError 
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-759865-7069 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/bitcount
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-727062-f30e --alsologtostderr -v=1 --logbuflevel=-1`
+Connection attempt 1 = FutureTimeoutError 
+Connection attempt 1 = FutureTimeoutError 
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212211-886312-c22c --alsologtostderr -v=1 --logbuflevel=-1`
+Connection attempt 1 = FutureTimeoutError 
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark: benchmark://cbench-v1/lame
+Connection attempt 2 = FutureTimeoutError 
+Connection attempt 1 = FutureTimeoutError 
+Setting benchmark by name: benchmark://cbench-v1/tiff2bw
+Connection attempt 4 = FutureTimeoutError 
+Setting benchmark by name: benchmark://cbench-v1/stringsearch
+Setting benchmark by name: benchmark://cbench-v1/stringsearch
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark: benchmark://cbench-v1/crc32
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/adpcm
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/tiffmedian
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/jpeg-d
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/patricia
+Setting benchmark by name: benchmark://cbench-v1/crc32
+Setting benchmark by name: benchmark://cbench-v1/jpeg-c
+Setting benchmark by name: benchmark://cbench-v1/adpcm
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/bitcount
+Setting benchmark by name: benchmark://cbench-v1/tiff2rgba
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/gsm
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/patricia
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/ghostscript
+Setting benchmark: benchmark://cbench-v1/adpcm
+Setting benchmark by name: benchmark://cbench-v1/ispell
+Setting benchmark by name: benchmark://cbench-v1/ispell
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/tiff2rgba
+Setting benchmark by name: benchmark://cbench-v1/bzip2
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212217-689788-3c91 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark: benchmark://cbench-v1/ispell
+Setting benchmark: benchmark://cbench-v1/stringsearch
+Setting benchmark: benchmark://cbench-v1/crc32
+Setting benchmark by name: benchmark://cbench-v1/dijkstra
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Ending session 1
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark: benchmark://cbench-v1/bitcount
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark: benchmark://cbench-v1/patricia
+Setting benchmark by name: benchmark://cbench-v1/susan
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/tiffmedian
+Setting benchmark by name: benchmark://cbench-v1/lame
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/crc32
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/susan
+Setting benchmark by name: benchmark://cbench-v1/tiff2rgba
+Setting benchmark by name: benchmark://cbench-v1/patricia
+Setting benchmark by name: benchmark://cbench-v1/stringsearch
+Setting benchmark by name: benchmark://cbench-v1/ispell
+Setting benchmark by name: benchmark://cbench-v1/stringsearch
+Setting benchmark by name: benchmark://cbench-v1/adpcm
+Setting benchmark by name: benchmark://cbench-v1/susan
+Setting benchmark: benchmark://cbench-v1/dijkstra
+Setting benchmark by name: benchmark://cbench-v1/tiffmedian
+Setting benchmark by name: benchmark://cbench-v1/crc32
+Setting benchmark by name: benchmark://cbench-v1/adpcm
+Setting benchmark by name: benchmark://cbench-v1/jpeg-c
+Setting benchmark by name: benchmark://cbench-v1/tiff2rgba
+Setting benchmark by name: benchmark://cbench-v1/patricia
+Setting benchmark by name: benchmark://cbench-v1/crc32
+Setting benchmark by name: benchmark://cbench-v1/adpcm
+Setting benchmark by name: benchmark://cbench-v1/sha
+Setting benchmark by name: benchmark://cbench-v1/adpcm
+Setting benchmark by name: benchmark://cbench-v1/bitcount
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/adpcm
+Setting benchmark by name: benchmark://cbench-v1/sha
+Setting benchmark by name: benchmark://cbench-v1/ispell
+Setting benchmark by name: benchmark://cbench-v1/crc32
+Setting benchmark by name: benchmark://cbench-v1/blowfish
+Setting benchmark by name: benchmark://cbench-v1/stringsearch
+Setting benchmark by name: benchmark://cbench-v1/ispell
+Setting benchmark by name: benchmark://cbench-v1/bzip2
+Setting benchmark by name: benchmark://cbench-v1/bitcount
+Setting benchmark by name: benchmark://cbench-v1/patricia
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/gsm
+Setting benchmark by name: benchmark://cbench-v1/dijkstra
+Setting benchmark by name: benchmark://cbench-v1/rijndael
+Setting benchmark by name: benchmark://cbench-v1/rijndael
+Setting benchmark by name: benchmark://cbench-v1/stringsearch2
+Setting benchmark by name: benchmark://cbench-v1/tiffdither
+Setting benchmark by name: benchmark://cbench-v1/ghostscript
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark: benchmark://cbench-v1/adpcm
+Setting benchmark by name: benchmark://cbench-v1/bzip2
+Setting benchmark by name: benchmark://cbench-v1/stringsearch2
+Setting benchmark by name: benchmark://cbench-v1/dijkstra
+Setting benchmark: benchmark://cbench-v1/adpcm
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/adpcm
+Ending session 1
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212218-543733-b350 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/adpcm
+Setting benchmark: benchmark://cbench-v1/adpcm
+Setting benchmark: benchmark://cbench-v1/patricia
+Setting benchmark: benchmark://cbench-v1/adpcm
+Ending session 1
+Setting benchmark: benchmark://cbench-v1/crc32
+Ending session 1
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/patricia
+Setting benchmark by name: benchmark://cbench-v1/adpcm
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/crc32
+Setting benchmark by name: benchmark://cbench-v1/adpcm
+Setting benchmark: benchmark://cbench-v1/crc32
+Setting benchmark: benchmark://cbench-v1/stringsearch
+Setting benchmark: benchmark://cbench-v1/patricia
+Ending session 1
+Ending session 1
+Setting benchmark: benchmark://cbench-v1/stringsearch
+Setting benchmark: benchmark://cbench-v1/sha
+Setting benchmark by name: benchmark://cbench-v1/crc32
+Setting benchmark: benchmark://cbench-v1/bitcount
+Setting benchmark: benchmark://cbench-v1/sha
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark: benchmark://cbench-v1/dijkstra
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/stringsearch
+Setting benchmark: benchmark://cbench-v1/stringsearch2
+Ending session 1
+Setting benchmark: benchmark://cbench-v1/stringsearch2
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212219-117653-60cb --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/patricia
+Ending session 1
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/rijndael
+Setting benchmark: benchmark://cbench-v1/qsort
+Ending session 1
+Setting benchmark: benchmark://cbench-v1/blowfish
+Setting benchmark by name: benchmark://cbench-v1/stringsearch
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/sha
+Setting benchmark by name: benchmark://cbench-v1/sha
+Ending session 1
+Setting benchmark: benchmark://cbench-v1/rijndael
+Setting benchmark: benchmark://cbench-v1/rijndael
+Setting benchmark by name: benchmark://cbench-v1/bitcount
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/stringsearch2
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/dijkstra
+Setting benchmark by name: benchmark://cbench-v1/stringsearch2
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/blowfish
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212219-523506-85b8 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/rijndael
+Connection attempt 1 = FutureTimeoutError 
+Setting benchmark by name: benchmark://cbench-v1/rijndael
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212219-662420-cdda --alsologtostderr -v=1 --logbuflevel=-1`
+Connection attempt 2 = FutureTimeoutError 
+Setting benchmark: benchmark://cbench-v1/susan
+Connection attempt 1 = FutureTimeoutError 
+Connection attempt 3 = FutureTimeoutError 
+Setting benchmark: benchmark://cbench-v1/lame
+Setting benchmark: benchmark://cbench-v1/rijndael
+Setting benchmark: benchmark://cbench-v1/susan
+Setting benchmark: benchmark://cbench-v1/susan
+Ending session 1
+Ending session 1
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/susan
+Connection attempt 2 = FutureTimeoutError 
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/susan
+Ending session 1
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212220-538551-f3b4 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/lame
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark: benchmark://cbench-v1/gsm
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212220-729564-d1de --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/jpeg-d
+Setting benchmark by name: benchmark://cbench-v1/rijndael
+Setting benchmark: benchmark://cbench-v1/ispell
+Setting benchmark by name: benchmark://cbench-v1/susan
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Connection attempt 1 = FutureTimeoutError 
+Setting benchmark by name: benchmark://cbench-v1/stringsearch
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/gsm
+Setting benchmark by name: benchmark://cbench-v1/tiffmedian
+Setting benchmark by name: benchmark://cbench-v1/ispell
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212221-268609-fbdf --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/dijkstra
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/bzip2
+Setting benchmark: benchmark://cbench-v1/ispell
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212221-490938-3b67 --alsologtostderr -v=1 --logbuflevel=-1`
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/ispell
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/jpeg-c
+Setting benchmark: benchmark://cbench-v1/stringsearch
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark: benchmark://cbench-v1/dijkstra
+Ending session 1
+Setting benchmark: benchmark://cbench-v1/ispell
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212221-903787-725e --alsologtostderr -v=1 --logbuflevel=-1`
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212221-923755-f9a3 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/tiff2bw
+Setting benchmark by name: benchmark://cbench-v1/stringsearch
+Ending session 1
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/ispell
+Setting benchmark by name: benchmark://cbench-v1/dijkstra
+Setting benchmark: benchmark://cbench-v1/bzip2
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/stringsearch2
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/bitcount
+Setting benchmark by name: benchmark://cbench-v1/bzip2
+Setting benchmark: benchmark://cbench-v1/tiff2bw
+Ending session 1
+Setting benchmark: benchmark://cbench-v1/tiff2rgba
+Setting benchmark by name: benchmark://cbench-v1/tiff2bw
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/tiff2rgba
+Setting benchmark: benchmark://cbench-v1/stringsearch2
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/stringsearch2
+Setting benchmark: benchmark://cbench-v1/bitcount
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/bitcount
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212223-021944-36c3 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark: benchmark://cbench-v1/bzip2
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/bzip2
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/lame
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212223-938283-10d9 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark: benchmark://cbench-v1/bzip2
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212224-113295-df95 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark: benchmark://cbench-v1/bzip2
+Ending session 1
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/bzip2
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/bzip2
+Setting benchmark by name: benchmark://cbench-v1/susan
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/stringsearch2
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212224-740257-2f86 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark: benchmark://cbench-v1/stringsearch2
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/stringsearch2
+Setting benchmark: benchmark://cbench-v1/jpeg-d
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/jpeg-d
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212225-056329-7c41 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/jpeg-c
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/susan
+Setting benchmark: benchmark://cbench-v1/tiff2bw
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/tiff2bw
+Setting benchmark: benchmark://cbench-v1/tiff2rgba
+Setting benchmark: benchmark://cbench-v1/susan
+Ending session 1
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/susan
+Setting benchmark by name: benchmark://cbench-v1/tiff2rgba
+Setting benchmark: benchmark://cbench-v1/tiff2rgba
+Ending session 1
+Setting benchmark: benchmark://cbench-v1/jpeg-d
+Setting benchmark by name: benchmark://cbench-v1/tiff2rgba
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/jpeg-d
+Setting benchmark: benchmark://cbench-v1/tiffmedian
+Ending session 1
+Setting benchmark: benchmark://cbench-v1/jpeg-c
+Setting benchmark by name: benchmark://cbench-v1/tiffmedian
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/jpeg-c
+Setting benchmark: benchmark://cbench-v1/tiff2rgba
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/tiff2rgba
+Setting benchmark: benchmark://cbench-v1/bzip2
+Setting benchmark: benchmark://cbench-v1/tiff2rgba
+Ending session 1
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/bzip2
+Setting benchmark by name: benchmark://cbench-v1/tiff2rgba
+Setting benchmark: benchmark://cbench-v1/susan
+Setting benchmark: benchmark://cbench-v1/tiffmedian
+Ending session 1
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/susan
+Setting benchmark by name: benchmark://cbench-v1/tiffmedian
+Setting benchmark: benchmark://cbench-v1/tiffmedian
+Setting benchmark: benchmark://cbench-v1/tiffdither
+Ending session 1
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/tiffdither
+Setting benchmark by name: benchmark://cbench-v1/tiffmedian
+Setting benchmark: benchmark://cbench-v1/jpeg-c
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/jpeg-c
+Setting benchmark: benchmark://cbench-v1/tiffmedian
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/tiffmedian
+Setting benchmark: benchmark://cbench-v1/jpeg-d
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/jpeg-d
+Setting benchmark: benchmark://cbench-v1/tiff2bw
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/tiff2bw
+Setting benchmark: benchmark://cbench-v1/jpeg-c
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/jpeg-c
+Setting benchmark: benchmark://cbench-v1/lame
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/lame
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212232-055635-d93e --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/qsort
+Setting benchmark by name: benchmark://cbench-v1/tiffdither
+Setting benchmark: benchmark://cbench-v1/jpeg-c
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/jpeg-c
+Setting benchmark: benchmark://cbench-v1/tiffdither
+Ending session 1
+Setting benchmark by name: benchmark://cbench-v1/tiffdither
+ServiceIsClosed during reset(): Service is offline
+ServiceIsClosed during reset(): Service is offline
+Ignoring service error during reset() attempt: Service exited with returncode -2 (ServiceError)
+Ignoring service error during reset() attempt: Service exited with returncode -2 (ServiceError)
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212301-055202-8cb4 --alsologtostderr -v=1 --logbuflevel=-1`
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212301-055483-6416 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/ghostscript
+Setting benchmark by name: benchmark://cbench-v1/ghostscript
+ServiceIsClosed during reset(): Service is offline
+Ignoring service error during reset() attempt: Service exited with returncode -2 (ServiceError)
+ServiceIsClosed during reset(): Service is offline
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212302-590649-7cf4 --alsologtostderr -v=1 --logbuflevel=-1`
+Ignoring service error during reset() attempt: Service exited with returncode -2 (ServiceError)
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212302-644879-c8a3 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/ghostscript
+Setting benchmark by name: benchmark://cbench-v1/ghostscript
+ServiceIsClosed during reset(): Service is offline
+Ignoring service error during reset() attempt: Service exited with returncode -2 (ServiceError)
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212303-761432-e33d --alsologtostderr -v=1 --logbuflevel=-1`
+ServiceIsClosed during reset(): Service is offline
+Ignoring service error during reset() attempt: Service exited with returncode -2 (ServiceError)
+Exec `./compiler_gym-llvm-service --working_dir=/dev/shm/compiler_gym_anthony/s/1129T212303-818558-e3b6 --alsologtostderr -v=1 --logbuflevel=-1`
+Setting benchmark by name: benchmark://cbench-v1/ghostscript
+Setting benchmark by name: benchmark://cbench-v1/ghostscript

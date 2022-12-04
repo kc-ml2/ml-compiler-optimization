@@ -1,0 +1,6 @@
+compiler-gym
+networkx
+torch-scatter
+torch-sparse
+torch-geometric
+ray[rllib]

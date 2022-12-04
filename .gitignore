@@ -1,0 +1,8 @@
+*.gif
+*.pt
+.idea
+wandb
+.DS_Store
+__pycache__
+.pytest*
+*egg*
