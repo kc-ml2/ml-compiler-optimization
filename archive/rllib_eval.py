@@ -114,5 +114,5 @@ class MyPolicy:
 if __name__ == '__main__':
     # env = compiler_gym.make('llvm-ic-v0')
     # env.observation_space = 'Programl'
-    # MyPolicy()(env)
+    # MyPolicy()(env5)
     eval_llvm_instcount_policy(MyPolicy())

@@ -59,3 +59,13 @@ implemented with 3 versions
 1. from scratch `_rl2` 
 2. rllib `rllib*.py` - distributed computing
 3. some PPO impl. from github `PPO-PyTorch` - someone from leaderboard refered to it
+
+## Citatation
+```
+@MISC{marlenv2021,
+    author = {Anthony W. Jung},
+    title = {Compiler optimization with Programl},
+    howpublished = {\url{http://github.com/kc-ml2/ml-comiler-optimization}},
+    year = {2022}
+}
+```

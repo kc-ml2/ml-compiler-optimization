@@ -20,16 +20,16 @@ if __name__ == '__main__':
         "num_cpus_per_worker": 15,
         "observation_filter": "NoFilter",
         "num_envs_per_worker": 1,
-        "sgd_minibatch_size": 4,
+        "sgd_minibatch_size": 1,
         # "train_batch_size": 32,
-        "rollout_fragment_length": 8,
+        "rollout_fragment_length": 2,
         # "sgd_minibatch_size": 32,
         "num_sgd_iter": 4,
         "model": {
             "custom_model": "model",
-            "vf_share_layers": False,
+            "vf_share_layers": True,
         },
-        "log_level": "DEBUG",
+        "log_level": "INFO",
         "ignore_worker_failures": True,
         "vf_loss_coeff": 0.5,
         # "grad_clip": 10,
@@ -47,8 +47,8 @@ if __name__ == '__main__':
     config['env'] = env_id
 
     stop = {
-        # "training_iteration": stop_iters,
-        "timesteps_total": 65536 # 134217728,  # 8192
+        "training_iteration": 262144,
+        # "timesteps_total": 65536*128 # 134217728,  # 8192
         # "episode_reward_mean": stop_reward,
     }
     tune.run(
@@ -56,9 +56,10 @@ if __name__ == '__main__':
         name='compopt-ddppo',
         config=config,
         reuse_actors=True,
-        checkpoint_freq=1024,
+        checkpoint_freq=int(stop['training_iteration']/256),
         checkpoint_at_end=True,
-        local_dir='/data1/anthony',
+        local_dir='./test',
         # max_failures=3,
         stop = stop
+        # resume=True,
     )
