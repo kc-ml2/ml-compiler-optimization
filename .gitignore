@@ -1,8 +1,10 @@
 *.gif
 *.pt
+*.pth
 .idea
 wandb
 .DS_Store
 __pycache__
 .pytest*
 *egg*
+events.out.tfevents.*
