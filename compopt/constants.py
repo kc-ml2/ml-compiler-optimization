@@ -12,13 +12,8 @@ MAX_TEXT, MAX_TYPE = len(VOCAB), 3
 EDGE_FEATURES = ['flow', 'position']
 MAX_FLOW, MAX_POS = 3, 5120
 
-# deprecated
-node_high = 7696
-edge_high = 4099
-edge_idx_high = None
-max_num_nodes = 831232
-max_num_edges = 1501132
-
+MAX_NODES = int(1e6)
+MAX_EDGES = int(1e7)
 
 RUNNABLE_BMS = [
     'benchmark://cbench-v1/bitcount',
@@ -40,3 +35,11 @@ RUNNABLE_BMS = [
     'benchmark://cbench-v1/tiffdither',
     'benchmark://cbench-v1/tiffmedian'
 ]
+
+# deprecated
+# node_high = 7696
+# edge_high = 4099
+# edge_idx_high = None
+# max_num_nodes = 831232
+# max_num_edges = 1501132
+

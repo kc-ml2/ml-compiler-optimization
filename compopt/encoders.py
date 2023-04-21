@@ -115,10 +115,10 @@ class GNN(nn.Module):
 
 class Encoder(nn.Module):
     def __init__(
-            self,
-            node_encoder,
-            edge_encoder,
-            gnn,
+        self,
+        node_encoder,
+        edge_encoder,
+        gnn,
     ):
         super().__init__()
         self.node_encoder = node_encoder
@@ -126,10 +126,10 @@ class Encoder(nn.Module):
         self.gnn = gnn
 
     def forward(
-            self,
-            x,  # [B, num_nodes, num_features]
-            edge_index,  # [B, 2, num_edges]
-            edge_attr  # [B, num_edges, num_features]
+        self,
+        x,  # [B, num_nodes, num_features]
+        edge_index,  # [B, 2, num_edges]
+        edge_attr  # [B, num_edges, num_features]
     ):
         x = self.node_encoder(x)
         edge_attr = self.edge_encoder(edge_attr)

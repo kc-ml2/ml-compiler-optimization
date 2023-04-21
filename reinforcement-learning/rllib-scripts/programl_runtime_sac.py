@@ -1,86 +1,57 @@
-from typing import Dict, Optional, Union
-import numpy as np
+import compiler_gym
 import compiler_gym
 import gym
+import numpy as np
 import ray
 import torch
-from ray.rllib.algorithms.sac.sac_torch_model import SACTorchModel
-from torch import nn
 import torch_geometric as pyg
 from compiler_gym.wrappers import TimeLimit, CommandlineWithTerminalAction, \
-    RuntimePointEstimateReward, CompilerEnvWrapper
+    RuntimePointEstimateReward
 from ray import air, tune
-from ray.rllib import BaseEnv, Policy
-from ray.rllib.algorithms.callbacks import DefaultCallbacks
 from ray.rllib.algorithms.sac import SACConfig
-from ray.rllib.evaluation import Episode
-from ray.rllib.evaluation.episode_v2 import EpisodeV2
+from ray.rllib.algorithms.sac.sac_torch_model import SACTorchModel
 from ray.rllib.models.torch.torch_modelv2 import TorchModelV2
-from ray.rllib.utils.typing import PolicyID, ModelConfigDict
 from ray.tune import register_env
+from torch import nn
 from torch_geometric.nn import GATv2Conv
 
-from compopt.constants import VOCAB, RUNNABLE_BMS
+from compopt.constants import VOCAB
+from compopt.rllib_utils import CustomCallbacks
 from compopt.utils import NumpyPreprocessor
+from compopt.wrappers import RunnableWrapper
+from compiler_gym.spaces import Sequence
 
 observation_space = 'Programl'
 
 
-class CustomCallbacks(DefaultCallbacks):
-    def on_episode_end(
-            self,
-            *,
-            worker: "RolloutWorker",
-            base_env: BaseEnv,
-            policies: Dict[PolicyID, Policy],
-            episode: Union[Episode, EpisodeV2, Exception],
-            env_index: Optional[int] = None,
-            **kwargs,
-    ) -> None:
-        envs = base_env.get_sub_environments()
-        runtimes = []
-        for env in envs:
-            runtimes.append(env.observation['Runtime'])
-        avg_runtime = sum(runtimes) / len(runtimes)
-        episode.custom_metrics['avg_runtime'] = avg_runtime
-
-
 def _sample():
     return [
-               pyg.data.Data(
-                   torch.FloatTensor(np.random.randn()),
-                   torch.LongTensor(np.random.randint()).T,
-                   torch.FloatTensor(np.random.randn())
-               )
-           ] * 32
-
-
-class CustomWrapper(CompilerEnvWrapper):
-    def __init__(self, env):
-        super(CustomWrapper, self).__init__(env)
-        self.i = 0
-        self.observation_space.sample = _sample()
-
-    def reset(self):
-        # only reset for runnable benchmarks
-        bm = RUNNABLE_BMS[self.i % len(RUNNABLE_BMS)]
-        obs = self.env.reset(benchmark=bm)
-        self.i += 1
-
-        return obs
+       pyg.data.Data(
+           torch.FloatTensor(np.random.randn(100, 7699)),
+           torch.LongTensor(np.random.randint(100, 2)).T,
+           torch.FloatTensor(np.random.randn(100, 3))
+       )
+   ] * 32
 
 
 class CustomProcessor(gym.Wrapper):
-    def __init__(self):
+    def __init__(self, env):
+        super(CustomProcessor, self).__init__(env)
         self.preprocessor = NumpyPreprocessor(VOCAB)
+        # self.env.observation_space = None
+        # self.observation_space.sample = _sample
+        # print(self.env.observation_space)
+        # print(self.env.action_space)
+        # print(self.env.reward_space)
 
     def _process(self, obs):
         x, edge_index, edge_attr = self.preprocessor.process(obs)
-        data = pyg.data.Data(
-            torch.FloatTensor(x),
-            torch.LongTensor(edge_index).T,
-            torch.FloatTensor(edge_attr)
-        )
+        data = {'x': x, 'edge_index': edge_index, 'edge_attr': edge_attr}
+        # data = pyg.data.Data(
+        #     torch.FloatTensor(x),
+        #     torch.LongTensor(edge_index).T,
+        #     torch.FloatTensor(edge_attr)
+        # )
 
         return data
 
@@ -90,6 +61,7 @@ class CustomProcessor(gym.Wrapper):
         return self._process(obs)
 
     def step(self, ac):
+        # print('*'*100, ac)
         obs, rew, done, info = self.env.step(ac)
         return self._process(obs), rew, done, info
 
@@ -102,15 +74,18 @@ def make_env():
     env = RuntimePointEstimateReward(env)
     env = TimeLimit(env, max_episode_steps=256)
     env = CommandlineWithTerminalAction(env)
-    env = CustomWrapper(env)
+    env = RunnableWrapper(env)
     env = CustomProcessor(env)
 
     return env
 
 
-class PolicyModel(nn.Module):
-    def __init__(self, num_outputs):
-        super().__init__()
+class PolicyModel(TorchModelV2, nn.Module):
+    def __init__(self, obs_space, action_space, num_outputs, model_config, name):
+        super().__init__(
+            obs_space, action_space, num_outputs, model_config, name
+        )
+        nn.Module.__init__(self)
         self.c1 = GATv2Conv(
             7699,
             1024,
@@ -126,17 +101,33 @@ class PolicyModel(nn.Module):
         )
         self.linear = nn.Linear(1024, num_outputs)
 
-    def forward(self, obs):
-        x = self.c1(obs.x, obs.edge_index, obs.edge_attr)
-        x = self.c2(x, obs.edge_index, obs.edge_attr)
-        x = self.linear(x)
+    def forward(self, input_dict, state_in, seq_lens):
+        obs = input_dict['obs']
 
-        return x
+        x, edge_index, edge_attr = obs['x'], obs['edge_index'], obs['edge_attr']
+        if x.dim() == 2:
+            x = x.unsqueeze(0)
+            edge_index = edge_index.unsqueeze(0)
+            edge_attr = edge_attr.unsqueeze(0)
+        logits = []
+        for i, j, k in zip(x, edge_index, edge_attr):
+            i = self.c1(i, j, k)
+            i = self.c2(i, j, k)
+            logits.append(i)
+        logits = torch.stack(logits)
+        logits = self.linear(logits)
+        logits = logits.mean(dim=1)
+        return logits, []
 
 
-class ValueModel(nn.Module):
-    def __init__(self, num_outputs):
-        super().__init__()
+class ValueModel(TorchModelV2, nn.Module):
+    def __init__(self, obs_space, action_space, num_outputs, model_config,
+                 name):
+        super().__init__(
+            obs_space, action_space, num_outputs, model_config, name
+        )
+        nn.Module.__init__(self)
+
         self.c1 = GATv2Conv(
             7699,
             1024,
@@ -152,35 +143,23 @@ class ValueModel(nn.Module):
         )
         self.linear = nn.Linear(1024, num_outputs)
 
-    def forward(self, obs):
-        x = self.c1(obs.x, obs.edge_index, obs.edge_attr)
-        x = self.c2(x, obs.edge_index, obs.edge_attr)
-        x = self.linear(x)
+    def forward(self, input_dict, state_in, seq_lens):
+        obs = input_dict['obs']
+        x, edge_index, edge_attr = obs['x'], obs['edge_index'], obs['edge_attr']
+        if x.dim() == 2:
+            x = x.unsqueeze(0)
+            edge_index = edge_index.unsqueeze(0)
+            edge_attr = edge_attr.unsqueeze(0)
+        logits = []
+        for i, j, k in zip(x, edge_index, edge_attr):
+            i = self.c1(i, j, k)
+            i = self.c2(i, j, k)
+            logits.append(i)
+        logits = torch.stack(logits)
+        logits = self.linear(logits)
+        logits = logits.mean(dim=1)
 
-        return x
-
-
-class CustomSAC(SACTorchModel):
-    def build_policy_model(
-        self,
-        obs_space,
-        num_outputs,
-        policy_model_config,
-        name
-    ):
-
-        return PolicyModel(num_outputs)
-
-    def build_q_model(
-        self,
-        obs_space,
-        action_space,
-        num_outputs,
-        q_model_config,
-        name
-    ):
-
-        return ValueModel(num_outputs)
+        return logits, []
 
 
 register_env(
@@ -194,21 +173,36 @@ algo = (
     )
     .framework('torch')
     .training(
-        # q_model_config={'custom_model': Model},
-        # policy_model_config={'custom_model': Model},
-        train_batch_size=64,
+        q_model_config={'custom_model': ValueModel},
+        policy_model_config={'custom_model': PolicyModel},
+        train_batch_size=1,
+        replay_buffer_config={
+            "_enable_replay_buffer_api": True,
+            "type": "MultiAgentPrioritizedReplayBuffer",
+            "capacity": int(1e3),
+            # If True prioritized replay buffer will be used.
+            "prioritized_replay": False,
+            "prioritized_replay_alpha": 0.6,
+            "prioritized_replay_beta": 0.4,
+            "prioritized_replay_eps": 1e-6,
+            # Whether to compute priorities already on the remote worker side.
+            "worker_side_prioritization": False,
+        },
         # sgd_minibatch_size=8,
-        model={"fcnet_hiddens": [2048, 2048, 2048]}
+        # model={"fcnet_hiddens": [2048, 2048, 2048]}
     )
     .rollouts(
-        # num_envs_per_worker=4,
-        # num_rollout_workers=4,
+        num_envs_per_worker=1,
+        num_rollout_workers=1,
         # batch_mode='complete_episodes',
         # rollout_fragment_length=4,
+        enable_connectors=True
     )
-    .resources(num_gpus=1)
+    .resources(num_gpus=2)
     .callbacks(CustomCallbacks)
-    .experimental(_disable_preprocessor_api=True)
+    .experimental(
+        _disable_preprocessor_api=True,
+    )
     # .debugging()
 )
 
