@@ -6,7 +6,8 @@ from gym.spaces import Box, Tuple
 
 import compiler_gym
 from compiler_gym.datasets import Datasets
-from compiler_gym.wrappers import CommandlineWithTerminalAction, TimeLimit
+from compiler_gym.wrappers import CommandlineWithTerminalAction, TimeLimit, \
+    CompilerEnvWrapper
 
 import networkx as nx
 import torch_geometric as pyg
@@ -17,7 +18,7 @@ from compopt.constants import (
     VOCAB, NODE_FEATURES,
     EDGE_FEATURES,
     MAX_TEXT, MAX_TYPE,
-    MAX_FLOW, MAX_POS
+    MAX_FLOW, MAX_POS, RUNNABLE_BMS
 )
 
 MAX_NODES = int(1e4)
@@ -28,6 +29,22 @@ DATA = [
     'blas-v0',
     'npb-v0'
 ]
+
+
+class RunnableWrapper(CompilerEnvWrapper):
+    def __init__(self, env):
+        super(RunnableWrapper, self).__init__(env)
+        self.i = 0
+        # self.observation_space.sample = _sample()
+
+    def reset(self):
+        # only reset for runnable benchmarks
+        bm = RUNNABLE_BMS[self.i % len(RUNNABLE_BMS)]
+        obs = self.env.reset(benchmark=bm)
+        self.i += 1
+
+        return obs
+
 
 def make_env(config):
     # TODO: what if env object is given?
@@ -134,7 +151,6 @@ def parse_graph(g):
     edge_index = list(g.edges)
 
     return x, edge_index, edge_attr
-
 
 
 def compute_space():

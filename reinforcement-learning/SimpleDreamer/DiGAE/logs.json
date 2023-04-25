@@ -1,0 +1,27 @@
+[
+    {
+        "alpha": 1.0,
+        "ap_mean": 0.8811631890230666,
+        "ap_std": 0.0,
+        "auc_mean": 0.8938554831813664,
+        "auc_std": 0.0,
+        "beta": 0.0,
+        "dataset": "cora_ml",
+        "date_time": "04/06/2023, 02:07:33",
+        "dimension": 32,
+        "directed": true,
+        "epochs": 200,
+        "feature_vector_size": null,
+        "feature_vector_type": null,
+        "hidden": 64,
+        "learning_rate": 0.01,
+        "model": "digae",
+        "nb_run": 1,
+        "prop_test": 10.0,
+        "prop_val": 5.0,
+        "task": "task_1",
+        "time_mean": 8.984989643096924,
+        "time_std": 0.0,
+        "validate": false
+    }
+]
