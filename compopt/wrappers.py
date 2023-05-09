@@ -1,5 +1,5 @@
 from gym import Wrapper
-
+import numpy as np
 import networkx as nx
 import torch_geometric as pyg
 from compiler_gym.datasets import Datasets
@@ -14,6 +14,25 @@ from compopt.constants import (
 from compopt.nx_utils import parse_nodes, parse_edges, parse_graph
 from compopt.spaces import compute_space
 
+class ActionHistogram(CompilerEnvWrapper):
+    def __init__(self, env):
+        super().__init__(env)
+        self.observation_space._shape = (
+            self.observation_space.shape[0] + env.action_space.n,
+        )
+
+    def reset(self):
+        obs = self.env.reset()
+        self.histogram = np.zeros(self.env.action_space.n, dtype=int)
+        obs = np.concatenate([obs, self.histogram])
+        return obs
+
+    def step(self, action):
+        self.histogram[action] += 1
+        obs, reward, done, info = self.env.step(action)
+        obs = np.concatenate([obs, self.histogram])
+
+        return obs, reward, done, info
 
 class LogNormalizer(CompilerEnvWrapper):
     """

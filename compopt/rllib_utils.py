@@ -21,6 +21,12 @@ class CustomCallbacks(DefaultCallbacks):
         envs = base_env.get_sub_environments()
         runtimes = []
         for env in envs:
-            runtimes.append(env.observation['Runtime'])
+            try:
+                # env.reward_space.previous_runtime
+                runtime = env.observation['Runtime']
+            except:
+                env.reset()
+                runtime = env.observation['Runtime']
+            runtimes.append(runtime)
         avg_runtime = sum(runtimes) / len(runtimes)
         episode.custom_metrics['avg_runtime'] = avg_runtime
