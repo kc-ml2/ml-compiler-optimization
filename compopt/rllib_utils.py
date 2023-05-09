@@ -9,17 +9,16 @@ from ray.rllib.utils.typing import PolicyID
 
 class CustomCallbacks(DefaultCallbacks):
     def on_episode_end(
-        self,
-        *,
-        worker: "RolloutWorker",
-        base_env: BaseEnv,
-        policies: Dict[PolicyID, Policy],
-        episode: Union[Episode, EpisodeV2, Exception],
-        env_index: Optional[int] = None,
-        **kwargs,
+            self,
+            *,
+            worker: "RolloutWorker",
+            base_env: BaseEnv,
+            policies: Dict[PolicyID, Policy],
+            episode: Union[Episode, EpisodeV2, Exception],
+            env_index: Optional[int] = None,
+            **kwargs,
     ) -> None:
         envs = base_env.get_sub_environments()
-
         runtimes = []
         for env in envs:
             runtimes.append(env.observation['Runtime'])

@@ -9,7 +9,6 @@ from compiler_gym.wrappers import TimeLimit, CommandlineWithTerminalAction, \
     RuntimePointEstimateReward
 from ray import air, tune
 from ray.rllib.algorithms.sac import SACConfig
-from ray.rllib.algorithms.sac.sac_torch_model import SACTorchModel
 from ray.rllib.models.torch.torch_modelv2 import TorchModelV2
 from ray.tune import register_env
 from torch import nn
@@ -19,7 +18,6 @@ from compopt.constants import VOCAB
 from compopt.rllib_utils import CustomCallbacks
 from compopt.utils import NumpyPreprocessor
 from compopt.wrappers import RunnableWrapper
-from compiler_gym.spaces import Sequence
 
 observation_space = 'Programl'
 
@@ -61,7 +59,6 @@ class CustomProcessor(gym.Wrapper):
         return self._process(obs)
 
     def step(self, ac):
-        # print('*'*100, ac)
         obs, rew, done, info = self.env.step(ac)
         return self._process(obs), rew, done, info
 
@@ -199,6 +196,7 @@ algo = (
         enable_connectors=True
     )
     .resources(num_gpus=2)
+
     .callbacks(CustomCallbacks)
     .experimental(
         _disable_preprocessor_api=True,

@@ -41,5 +41,4 @@ RUNNABLE_BMS = [
 # edge_high = 4099
 # edge_idx_high = None
 # max_num_nodes = 831232
-# max_num_edges = 1501132
-
+# max_num_edges = 150113
