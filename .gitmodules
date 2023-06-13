@@ -1,3 +1,6 @@
 [submodule "SimpleDreamer"]
 	path = SimpleDreamer
 	url = git@github.com:kc-ml2/SimpleDreamer.git
+[submodule "EfficientZero"]
+	path = EfficientZero
+	url = git@github.com:YeWR/EfficientZero.git

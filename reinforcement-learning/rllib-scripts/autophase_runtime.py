@@ -35,6 +35,8 @@ def make_env(env_config):
 register_env(
     "llvm", lambda c: make_env(c)
 )
+
+
 def main(bm):
     env_config = {
         'benchmark': bm,
@@ -90,6 +92,7 @@ def main(bm):
     ray.init(local_mode=False)
     results = tuner.fit()
     ray.shutdown()
+
 
 if __name__ == "__main__":
     with mp.Pool(len(RUNNABLE_BMS)) as pool:

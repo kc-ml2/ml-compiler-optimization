@@ -36,6 +36,7 @@ class CustomProcessor(gym.Wrapper):
     def __init__(self, env):
         super(CustomProcessor, self).__init__(env)
         self.preprocessor = NumpyPreprocessor(VOCAB)
+        self.env.observation_space._shape = (1000000,)
         # self.env.observation_space = None
         # self.observation_space.sample = _sample
         # print(self.env.observation_space)
