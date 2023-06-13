@@ -1,0 +1,957 @@
+	.text
+	.file	"sum_array.cc"
+	.globl	_Z11fill_randomPii      # -- Begin function _Z11fill_randomPii
+	.p2align	4, 0x90
+	.type	_Z11fill_randomPii,@function
+_Z11fill_randomPii:                     # @_Z11fill_randomPii
+	.cfi_startproc
+# %bb.0:
+	pushq	%r15
+	.cfi_def_cfa_offset 16
+	pushq	%r14
+	.cfi_def_cfa_offset 24
+	pushq	%rbx
+	.cfi_def_cfa_offset 32
+	.cfi_offset %rbx, -32
+	.cfi_offset %r14, -24
+	.cfi_offset %r15, -16
+	addq	$1, .L__profc__Z11fill_randomPii(%rip)
+	testl	%esi, %esi
+	jle	.LBB0_3
+# %bb.1:
+	movq	%rdi, %r14
+	movl	%esi, %r15d
+	xorl	%ebx, %ebx
+	.p2align	4, 0x90
+.LBB0_2:                                # =>This Inner Loop Header: Depth=1
+	addq	$1, .L__profc__Z11fill_randomPii+8(%rip)
+	callq	rand
+	cltq
+	imulq	$1374389535, %rax, %rcx # imm = 0x51EB851F
+	movq	%rcx, %rdx
+	shrq	$63, %rdx
+	sarq	$37, %rcx
+	addl	%edx, %ecx
+	imull	$100, %ecx, %ecx
+	subl	%ecx, %eax
+	movl	%eax, (%r14,%rbx,4)
+	addq	$1, %rbx
+	cmpq	%rbx, %r15
+	jne	.LBB0_2
+.LBB0_3:
+	popq	%rbx
+	.cfi_def_cfa_offset 24
+	popq	%r14
+	.cfi_def_cfa_offset 16
+	popq	%r15
+	.cfi_def_cfa_offset 8
+	retq
+.Lfunc_end0:
+	.size	_Z11fill_randomPii, .Lfunc_end0-_Z11fill_randomPii
+	.cfi_endproc
+                                        # -- End function
+	.globl	_Z9sum_arrayPii         # -- Begin function _Z9sum_arrayPii
+	.p2align	4, 0x90
+	.type	_Z9sum_arrayPii,@function
+_Z9sum_arrayPii:                        # @_Z9sum_arrayPii
+	.cfi_startproc
+# %bb.0:
+	addq	$1, .L__profc__Z9sum_arrayPii(%rip)
+	testl	%esi, %esi
+	jle	.LBB1_1
+# %bb.2:
+	movl	%esi, %r10d
+	movq	.L__profc__Z9sum_arrayPii+8(%rip), %rdx
+	cmpl	$3, %esi
+	jbe	.LBB1_3
+# %bb.10:
+	leaq	(%rdi,%r10,4), %rax
+	movl	$.L__profc__Z9sum_arrayPii+8, %ecx
+	cmpq	%rcx, %rax
+	jbe	.LBB1_12
+# %bb.11:
+	movl	$.L__profc__Z9sum_arrayPii+9, %eax
+	cmpq	%rax, %rdi
+	jae	.LBB1_12
+.LBB1_3:
+	xorl	%esi, %esi
+	xorl	%eax, %eax
+.LBB1_4:
+	movq	%rsi, %r8
+	notq	%r8
+	addq	%r10, %r8
+	movq	%r10, %rcx
+	andq	$3, %rcx
+	je	.LBB1_6
+	.p2align	4, 0x90
+.LBB1_5:                                # =>This Inner Loop Header: Depth=1
+	addq	$1, %rdx
+	movq	%rdx, .L__profc__Z9sum_arrayPii+8(%rip)
+	addl	(%rdi,%rsi,4), %eax
+	addq	$1, %rsi
+	addq	$-1, %rcx
+	jne	.LBB1_5
+.LBB1_6:
+	cmpq	$3, %r8
+	jb	.LBB1_9
+# %bb.7:
+	addq	$4, %rdx
+	.p2align	4, 0x90
+.LBB1_8:                                # =>This Inner Loop Header: Depth=1
+	leaq	-3(%rdx), %rcx
+	movq	%rcx, .L__profc__Z9sum_arrayPii+8(%rip)
+	addl	(%rdi,%rsi,4), %eax
+	leaq	-2(%rdx), %rcx
+	movq	%rcx, .L__profc__Z9sum_arrayPii+8(%rip)
+	addl	4(%rdi,%rsi,4), %eax
+	leaq	-1(%rdx), %rcx
+	movq	%rcx, .L__profc__Z9sum_arrayPii+8(%rip)
+	addl	8(%rdi,%rsi,4), %eax
+	movq	%rdx, .L__profc__Z9sum_arrayPii+8(%rip)
+	addl	12(%rdi,%rsi,4), %eax
+	addq	$4, %rsi
+	addq	$4, %rdx
+	cmpq	%rsi, %r10
+	jne	.LBB1_8
+	jmp	.LBB1_9
+.LBB1_1:
+	xorl	%eax, %eax
+	retq
+.LBB1_12:
+	movl	%r10d, %esi
+	andl	$-4, %esi
+	leaq	1(%rdx), %r8
+	leaq	-4(%rsi), %rax
+	movq	%rax, %r11
+	shrq	$2, %r11
+	addq	$1, %r11
+	movl	%r11d, %r9d
+	andl	$1, %r9d
+	testq	%rax, %rax
+	je	.LBB1_13
+# %bb.14:
+	leaq	24(%rdi), %rcx
+	movq	%r9, %rax
+	subq	%r11, %rax
+	pxor	%xmm0, %xmm0
+	xorl	%r11d, %r11d
+	pxor	%xmm1, %xmm1
+	.p2align	4, 0x90
+.LBB1_15:                               # =>This Inner Loop Header: Depth=1
+	movq	-24(%rcx), %xmm2        # xmm2 = mem[0],zero
+	paddd	%xmm0, %xmm2
+	movq	-16(%rcx), %xmm3        # xmm3 = mem[0],zero
+	paddd	%xmm1, %xmm3
+	movq	-8(%rcx), %xmm0         # xmm0 = mem[0],zero
+	paddd	%xmm2, %xmm0
+	movq	(%rcx), %xmm1           # xmm1 = mem[0],zero
+	paddd	%xmm3, %xmm1
+	addq	$32, %rcx
+	addq	$-8, %r11
+	addq	$2, %rax
+	jne	.LBB1_15
+# %bb.16:
+	movq	%rdx, %rax
+	subq	%r11, %rax
+	movq	%rax, .L__profc__Z9sum_arrayPii+8(%rip)
+	subq	%r11, %r8
+	negq	%r11
+	testq	%r9, %r9
+	je	.LBB1_19
+.LBB1_18:
+	addq	$3, %r8
+	movq	%r8, .L__profc__Z9sum_arrayPii+8(%rip)
+	movq	8(%rdi,%r11,4), %xmm2   # xmm2 = mem[0],zero
+	paddd	%xmm2, %xmm1
+	movq	(%rdi,%r11,4), %xmm2    # xmm2 = mem[0],zero
+	paddd	%xmm2, %xmm0
+.LBB1_19:
+	paddd	%xmm1, %xmm0
+	pshufd	$229, %xmm0, %xmm1      # xmm1 = xmm0[1,1,2,3]
+	paddd	%xmm0, %xmm1
+	movd	%xmm1, %eax
+	cmpq	%r10, %rsi
+	jne	.LBB1_20
+.LBB1_9:
+	retq
+.LBB1_20:
+	addq	%rsi, %rdx
+	jmp	.LBB1_4
+.LBB1_13:
+	pxor	%xmm0, %xmm0
+	xorl	%r11d, %r11d
+	pxor	%xmm1, %xmm1
+	testq	%r9, %r9
+	jne	.LBB1_18
+	jmp	.LBB1_19
+.Lfunc_end1:
+	.size	_Z9sum_arrayPii, .Lfunc_end1-_Z9sum_arrayPii
+	.cfi_endproc
+                                        # -- End function
+	.globl	main                    # -- Begin function main
+	.p2align	4, 0x90
+	.type	main,@function
+main:                                   # @main
+	.cfi_startproc
+# %bb.0:
+	pushq	%rbp
+	.cfi_def_cfa_offset 16
+	pushq	%r15
+	.cfi_def_cfa_offset 24
+	pushq	%r14
+	.cfi_def_cfa_offset 32
+	pushq	%rbx
+	.cfi_def_cfa_offset 40
+	subq	$4000008, %rsp          # imm = 0x3D0908
+	.cfi_def_cfa_offset 4000048
+	.cfi_offset %rbx, -40
+	.cfi_offset %r14, -32
+	.cfi_offset %r15, -24
+	.cfi_offset %rbp, -16
+	addq	$1, .L__profc_main(%rip)
+	addq	$1, .L__profc__Z11fill_randomPii(%rip)
+	xorl	%ebx, %ebx
+	.p2align	4, 0x90
+.LBB2_1:                                # =>This Inner Loop Header: Depth=1
+	addq	$1, .L__profc__Z11fill_randomPii+8(%rip)
+	callq	rand
+	cltq
+	imulq	$1374389535, %rax, %rcx # imm = 0x51EB851F
+	movq	%rcx, %rdx
+	shrq	$63, %rdx
+	sarq	$37, %rcx
+	addl	%edx, %ecx
+	imull	$100, %ecx, %ecx
+	subl	%ecx, %eax
+	movl	%eax, (%rsp,%rbx,4)
+	addq	$1, %rbx
+	cmpq	$1000000, %rbx          # imm = 0xF4240
+	jne	.LBB2_1
+# %bb.2:
+	xorl	%r15d, %r15d
+	xorl	%edi, %edi
+	callq	time
+	movl	%eax, %edi
+	callq	srand
+	leaq	112(%rsp), %r14
+	xorl	%ebp, %ebp
+	jmp	.LBB2_3
+	.p2align	4, 0x90
+.LBB2_21:                               #   in Loop: Header=BB2_3 Depth=1
+	addq	%rax, %r9
+	movq	%r9, .L__profc__Z9sum_arrayPii+8(%rip)
+.LBB2_22:                               #   in Loop: Header=BB2_3 Depth=1
+	addl	%ecx, %r15d
+	addl	$1, %ebp
+	cmpl	$1000, %ebp             # imm = 0x3E8
+	je	.LBB2_6
+.LBB2_3:                                # =>This Loop Header: Depth=1
+                                        #     Child Loop BB2_14 Depth 2
+                                        #     Child Loop BB2_17 Depth 2
+                                        #     Child Loop BB2_20 Depth 2
+	addq	$1, .L__profc_main+8(%rip)
+	callq	rand
+	movslq	%eax, %rbx
+	imulq	$1125899907, %rbx, %rax # imm = 0x431BDE83
+	movq	%rax, %rcx
+	shrq	$63, %rcx
+	sarq	$50, %rax
+	addl	%ecx, %eax
+	imull	$1000000, %eax, %eax    # imm = 0xF4240
+	subl	%eax, %ebx
+	callq	rand
+	movl	$1000000, %ecx          # imm = 0xF4240
+	subl	%ebx, %ecx
+	cltd
+	idivl	%ecx
+	addq	$1, .L__profc__Z9sum_arrayPii(%rip)
+	movl	$0, %ecx
+	testl	%edx, %edx
+	jle	.LBB2_22
+# %bb.4:                                #   in Loop: Header=BB2_3 Depth=1
+	movslq	%ebx, %r8
+	movl	%edx, %eax
+	movq	.L__profc__Z9sum_arrayPii+8(%rip), %r9
+	cmpl	$8, %edx
+	jae	.LBB2_11
+# %bb.5:                                #   in Loop: Header=BB2_3 Depth=1
+	xorl	%edx, %edx
+	xorl	%ecx, %ecx
+	jmp	.LBB2_19
+	.p2align	4, 0x90
+.LBB2_11:                               #   in Loop: Header=BB2_3 Depth=1
+	movl	%eax, %edx
+	andl	$-8, %edx
+	leaq	-8(%rdx), %rcx
+	movq	%rcx, %rsi
+	shrq	$3, %rsi
+	addq	$1, %rsi
+	movl	%esi, %ebx
+	andl	$3, %ebx
+	cmpq	$24, %rcx
+	jae	.LBB2_13
+# %bb.12:                               #   in Loop: Header=BB2_3 Depth=1
+	pxor	%xmm0, %xmm0
+	xorl	%esi, %esi
+	pxor	%xmm1, %xmm1
+	jmp	.LBB2_15
+.LBB2_13:                               #   in Loop: Header=BB2_3 Depth=1
+	leaq	(%r14,%r8,4), %rcx
+	movq	%rbx, %rdi
+	subq	%rsi, %rdi
+	pxor	%xmm0, %xmm0
+	xorl	%esi, %esi
+	pxor	%xmm1, %xmm1
+	.p2align	4, 0x90
+.LBB2_14:                               #   Parent Loop BB2_3 Depth=1
+                                        # =>  This Inner Loop Header: Depth=2
+	movdqu	-112(%rcx,%rsi,4), %xmm2
+	paddd	%xmm0, %xmm2
+	movdqu	-96(%rcx,%rsi,4), %xmm0
+	paddd	%xmm1, %xmm0
+	movdqu	-80(%rcx,%rsi,4), %xmm1
+	movdqu	-64(%rcx,%rsi,4), %xmm3
+	movdqu	-48(%rcx,%rsi,4), %xmm4
+	paddd	%xmm1, %xmm4
+	paddd	%xmm2, %xmm4
+	movdqu	-32(%rcx,%rsi,4), %xmm2
+	paddd	%xmm3, %xmm2
+	paddd	%xmm0, %xmm2
+	movdqu	-16(%rcx,%rsi,4), %xmm0
+	paddd	%xmm4, %xmm0
+	movdqu	(%rcx,%rsi,4), %xmm1
+	paddd	%xmm2, %xmm1
+	addq	$32, %rsi
+	addq	$4, %rdi
+	jne	.LBB2_14
+.LBB2_15:                               #   in Loop: Header=BB2_3 Depth=1
+	testq	%rbx, %rbx
+	je	.LBB2_18
+# %bb.16:                               #   in Loop: Header=BB2_3 Depth=1
+	addq	%r8, %rsi
+	leaq	(%r14,%rsi,4), %rcx
+	addq	$-96, %rcx
+	shlq	$5, %rbx
+	xorl	%esi, %esi
+	.p2align	4, 0x90
+.LBB2_17:                               #   Parent Loop BB2_3 Depth=1
+                                        # =>  This Inner Loop Header: Depth=2
+	movdqu	-16(%rcx,%rsi), %xmm2
+	paddd	%xmm2, %xmm0
+	movdqu	(%rcx,%rsi), %xmm2
+	paddd	%xmm2, %xmm1
+	addq	$32, %rsi
+	cmpq	%rsi, %rbx
+	jne	.LBB2_17
+.LBB2_18:                               #   in Loop: Header=BB2_3 Depth=1
+	paddd	%xmm1, %xmm0
+	pshufd	$78, %xmm0, %xmm1       # xmm1 = xmm0[2,3,0,1]
+	paddd	%xmm0, %xmm1
+	pshufd	$229, %xmm1, %xmm0      # xmm0 = xmm1[1,1,2,3]
+	paddd	%xmm1, %xmm0
+	movd	%xmm0, %ecx
+	cmpq	%rax, %rdx
+	je	.LBB2_21
+.LBB2_19:                               #   in Loop: Header=BB2_3 Depth=1
+	leaq	(%rsp,%r8,4), %rsi
+	.p2align	4, 0x90
+.LBB2_20:                               #   Parent Loop BB2_3 Depth=1
+                                        # =>  This Inner Loop Header: Depth=2
+	addl	(%rsi,%rdx,4), %ecx
+	addq	$1, %rdx
+	cmpq	%rdx, %rax
+	jne	.LBB2_20
+	jmp	.LBB2_21
+.LBB2_6:
+	addq	$1, __profc__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc(%rip)
+	addq	$1, __profc__ZNSt11char_traitsIcE6lengthEPKc(%rip)
+	movl	$_ZSt4cout, %edi
+	movl	$.L.str, %esi
+	movl	$11, %edx
+	callq	_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+	movl	$_ZSt4cout, %edi
+	movl	%r15d, %esi
+	callq	_ZNSolsEi
+	addq	$1, __profc__ZNSolsEPFRSoS_E(%rip)
+	addq	$1, __profc__ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_(%rip)
+	movq	%rax, %r14
+	movq	(%rax), %rax
+	movq	-24(%rax), %rax
+	addq	$1, __profc__ZNKSt9basic_iosIcSt11char_traitsIcEE5widenEc(%rip)
+	movq	240(%r14,%rax), %rbx
+	addq	$1, __profc__ZSt13__check_facetISt5ctypeIcEERKT_PS3_(%rip)
+	testq	%rbx, %rbx
+	je	.LBB2_23
+# %bb.7:
+	addq	$1, __profc__ZNKSt5ctypeIcE5widenEc(%rip)
+	cmpb	$0, 56(%rbx)
+	je	.LBB2_9
+# %bb.8:
+	addq	$1, __profc__ZNKSt5ctypeIcE5widenEc+8(%rip)
+	movb	67(%rbx), %al
+	jmp	.LBB2_10
+.LBB2_9:
+	movq	%rbx, %rdi
+	callq	_ZNKSt5ctypeIcE13_M_widen_initEv
+	movq	(%rbx), %rax
+	movq	%rbx, %rdi
+	movl	$10, %esi
+	callq	*48(%rax)
+.LBB2_10:
+	movsbl	%al, %esi
+	movq	%r14, %rdi
+	callq	_ZNSo3putEc
+	addq	$1, __profc__ZSt5flushIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_(%rip)
+	movq	%rax, %rdi
+	callq	_ZNSo5flushEv
+	xorl	%eax, %eax
+	addq	$4000008, %rsp          # imm = 0x3D0908
+	.cfi_def_cfa_offset 40
+	popq	%rbx
+	.cfi_def_cfa_offset 32
+	popq	%r14
+	.cfi_def_cfa_offset 24
+	popq	%r15
+	.cfi_def_cfa_offset 16
+	popq	%rbp
+	.cfi_def_cfa_offset 8
+	retq
+.LBB2_23:
+	.cfi_def_cfa_offset 4000048
+	addq	$1, __profc__ZSt13__check_facetISt5ctypeIcEERKT_PS3_+8(%rip)
+	callq	_ZSt16__throw_bad_castv
+.Lfunc_end2:
+	.size	main, .Lfunc_end2-main
+	.cfi_endproc
+                                        # -- End function
+	.section	.text._ZNSt11char_traitsIcE6lengthEPKc,"axG",@progbits,_ZNSt11char_traitsIcE6lengthEPKc,comdat
+	.weak	_ZNSt11char_traitsIcE6lengthEPKc # -- Begin function _ZNSt11char_traitsIcE6lengthEPKc
+	.p2align	4, 0x90
+	.type	_ZNSt11char_traitsIcE6lengthEPKc,@function
+_ZNSt11char_traitsIcE6lengthEPKc:       # @_ZNSt11char_traitsIcE6lengthEPKc
+	.cfi_startproc
+# %bb.0:
+	addq	$1, __profc__ZNSt11char_traitsIcE6lengthEPKc(%rip)
+	jmp	strlen                  # TAILCALL
+.Lfunc_end3:
+	.size	_ZNSt11char_traitsIcE6lengthEPKc, .Lfunc_end3-_ZNSt11char_traitsIcE6lengthEPKc
+	.cfi_endproc
+                                        # -- End function
+	.section	.text._ZStorSt12_Ios_IostateS_,"axG",@progbits,_ZStorSt12_Ios_IostateS_,comdat
+	.weak	_ZStorSt12_Ios_IostateS_ # -- Begin function _ZStorSt12_Ios_IostateS_
+	.p2align	4, 0x90
+	.type	_ZStorSt12_Ios_IostateS_,@function
+_ZStorSt12_Ios_IostateS_:               # @_ZStorSt12_Ios_IostateS_
+	.cfi_startproc
+# %bb.0:
+	movl	%edi, %eax
+	addq	$1, __profc__ZStorSt12_Ios_IostateS_(%rip)
+	orl	%esi, %eax
+	retq
+.Lfunc_end4:
+	.size	_ZStorSt12_Ios_IostateS_, .Lfunc_end4-_ZStorSt12_Ios_IostateS_
+	.cfi_endproc
+                                        # -- End function
+	.section	.text._ZSt13__check_facetISt5ctypeIcEERKT_PS3_,"axG",@progbits,_ZSt13__check_facetISt5ctypeIcEERKT_PS3_,comdat
+	.weak	_ZSt13__check_facetISt5ctypeIcEERKT_PS3_ # -- Begin function _ZSt13__check_facetISt5ctypeIcEERKT_PS3_
+	.p2align	4, 0x90
+	.type	_ZSt13__check_facetISt5ctypeIcEERKT_PS3_,@function
+_ZSt13__check_facetISt5ctypeIcEERKT_PS3_: # @_ZSt13__check_facetISt5ctypeIcEERKT_PS3_
+	.cfi_startproc
+# %bb.0:
+	pushq	%rax
+	.cfi_def_cfa_offset 16
+	addq	$1, __profc__ZSt13__check_facetISt5ctypeIcEERKT_PS3_(%rip)
+	testq	%rdi, %rdi
+	je	.LBB5_2
+# %bb.1:
+	movq	%rdi, %rax
+	popq	%rcx
+	.cfi_def_cfa_offset 8
+	retq
+.LBB5_2:
+	.cfi_def_cfa_offset 16
+	addq	$1, __profc__ZSt13__check_facetISt5ctypeIcEERKT_PS3_+8(%rip)
+	callq	_ZSt16__throw_bad_castv
+.Lfunc_end5:
+	.size	_ZSt13__check_facetISt5ctypeIcEERKT_PS3_, .Lfunc_end5-_ZSt13__check_facetISt5ctypeIcEERKT_PS3_
+	.cfi_endproc
+                                        # -- End function
+	.section	.text._ZNKSt5ctypeIcE5widenEc,"axG",@progbits,_ZNKSt5ctypeIcE5widenEc,comdat
+	.weak	_ZNKSt5ctypeIcE5widenEc # -- Begin function _ZNKSt5ctypeIcE5widenEc
+	.p2align	4, 0x90
+	.type	_ZNKSt5ctypeIcE5widenEc,@function
+_ZNKSt5ctypeIcE5widenEc:                # @_ZNKSt5ctypeIcE5widenEc
+	.cfi_startproc
+# %bb.0:
+	pushq	%rbp
+	.cfi_def_cfa_offset 16
+	pushq	%rbx
+	.cfi_def_cfa_offset 24
+	pushq	%rax
+	.cfi_def_cfa_offset 32
+	.cfi_offset %rbx, -24
+	.cfi_offset %rbp, -16
+	addq	$1, __profc__ZNKSt5ctypeIcE5widenEc(%rip)
+	movl	%esi, %ebp
+	movq	%rdi, %rbx
+	cmpb	$0, 56(%rdi)
+	je	.LBB6_2
+# %bb.1:
+	addq	$1, __profc__ZNKSt5ctypeIcE5widenEc+8(%rip)
+	movzbl	%bpl, %eax
+	movb	57(%rbx,%rax), %al
+	addq	$8, %rsp
+	.cfi_def_cfa_offset 24
+	popq	%rbx
+	.cfi_def_cfa_offset 16
+	popq	%rbp
+	.cfi_def_cfa_offset 8
+	retq
+.LBB6_2:
+	.cfi_def_cfa_offset 32
+	movq	%rbx, %rdi
+	callq	_ZNKSt5ctypeIcE13_M_widen_initEv
+	movq	(%rbx), %rax
+	movq	48(%rax), %rax
+	movsbl	%bpl, %esi
+	movq	%rbx, %rdi
+	addq	$8, %rsp
+	.cfi_def_cfa_offset 24
+	popq	%rbx
+	.cfi_def_cfa_offset 16
+	popq	%rbp
+	.cfi_def_cfa_offset 8
+	jmpq	*%rax                   # TAILCALL
+.Lfunc_end6:
+	.size	_ZNKSt5ctypeIcE5widenEc, .Lfunc_end6-_ZNKSt5ctypeIcE5widenEc
+	.cfi_endproc
+                                        # -- End function
+	.section	.text.startup,"ax",@progbits
+	.p2align	4, 0x90         # -- Begin function _GLOBAL__sub_I_sum_array.cc
+	.type	_GLOBAL__sub_I_sum_array.cc,@function
+_GLOBAL__sub_I_sum_array.cc:            # @_GLOBAL__sub_I_sum_array.cc
+	.cfi_startproc
+# %bb.0:
+	pushq	%rax
+	.cfi_def_cfa_offset 16
+	movl	$_ZStL8__ioinit, %edi
+	callq	_ZNSt8ios_base4InitC1Ev
+	movl	$_ZNSt8ios_base4InitD1Ev, %edi
+	movl	$_ZStL8__ioinit, %esi
+	movl	$__dso_handle, %edx
+	popq	%rax
+	.cfi_def_cfa_offset 8
+	jmp	__cxa_atexit            # TAILCALL
+.Lfunc_end7:
+	.size	_GLOBAL__sub_I_sum_array.cc, .Lfunc_end7-_GLOBAL__sub_I_sum_array.cc
+	.cfi_endproc
+                                        # -- End function
+	.type	_ZStL8__ioinit,@object  # @_ZStL8__ioinit
+	.local	_ZStL8__ioinit
+	.comm	_ZStL8__ioinit,1,1
+	.hidden	__dso_handle
+	.type	.L.str,@object          # @.str
+	.section	.rodata.str1.1,"aMS",@progbits,1
+.L.str:
+	.asciz	"Total sum: "
+	.size	.L.str, 12
+
+	.section	.init_array,"aw",@init_array
+	.p2align	3
+	.quad	_GLOBAL__sub_I_sum_array.cc
+	.type	__llvm_coverage_mapping,@object # @__llvm_coverage_mapping
+	.section	__llvm_covmap,"",@progbits
+	.p2align	3
+__llvm_coverage_mapping:
+	.long	3                       # 0x3
+	.long	59                      # 0x3b
+	.long	109                     # 0x6d
+	.long	2                       # 0x2
+	.quad	-5388917157416051952    # 0xb536b865a4355b10
+	.long	35                      # 0x23
+	.quad	18129                   # 0x46d1
+	.quad	2521315109705468470     # 0x22fd82bbd8d1ca36
+	.long	35                      # 0x23
+	.quad	1160280                 # 0x11b458
+	.quad	-2624081020897602054    # 0xdb956436e78dd5fa
+	.long	35                      # 0x23
+	.quad	1160280                 # 0x11b458
+	.asciz	"\0019/home/anthony/ml-compiler-optimization/nonML/sum_array.cc\001\000\001\001\005\005\001\b(\004\002\003\001\023\000\033\005\000\035\000 \005\000!\000\242\200\200\200\b\005\000\"\002\004\001\000\001\001\005\005\001\016%\006\002\003\002\023\000\033\005\000\035\000 \005\000!\000\242\200\200\200\b\005\000\"\002\004\001\000\001\001\005\005\001\026\f\022\002\003\b\023\000\033\005\000\035\000 \005\000!\000\242\200\200\200\b\005\000\"\006\004\000\000\000"
+	.size	__llvm_coverage_mapping, 244
+
+	.type	.L__profc__Z11fill_randomPii,@object # @__profc__Z11fill_randomPii
+	.section	__llvm_prf_cnts,"aw",@progbits
+	.p2align	3
+.L__profc__Z11fill_randomPii:
+	.zero	16
+	.size	.L__profc__Z11fill_randomPii, 16
+
+	.type	.L__profd__Z11fill_randomPii,@object # @__profd__Z11fill_randomPii
+	.section	__llvm_prf_data,"aw",@progbits
+	.p2align	3
+.L__profd__Z11fill_randomPii:
+	.quad	-5388917157416051952    # 0xb536b865a4355b10
+	.quad	18129                   # 0x46d1
+	.quad	.L__profc__Z11fill_randomPii
+	.quad	_Z11fill_randomPii
+	.quad	0
+	.long	2                       # 0x2
+	.zero	4
+	.size	.L__profd__Z11fill_randomPii, 48
+
+	.type	.L__profc__Z9sum_arrayPii,@object # @__profc__Z9sum_arrayPii
+	.section	__llvm_prf_cnts,"aw",@progbits
+	.p2align	3
+.L__profc__Z9sum_arrayPii:
+	.zero	16
+	.size	.L__profc__Z9sum_arrayPii, 16
+
+	.type	.L__profd__Z9sum_arrayPii,@object # @__profd__Z9sum_arrayPii
+	.section	__llvm_prf_data,"aw",@progbits
+	.p2align	3
+.L__profd__Z9sum_arrayPii:
+	.quad	2521315109705468470     # 0x22fd82bbd8d1ca36
+	.quad	1160280                 # 0x11b458
+	.quad	.L__profc__Z9sum_arrayPii
+	.quad	_Z9sum_arrayPii
+	.quad	0
+	.long	2                       # 0x2
+	.zero	4
+	.size	.L__profd__Z9sum_arrayPii, 48
+
+	.type	.L__profc_main,@object  # @__profc_main
+	.section	__llvm_prf_cnts,"aw",@progbits
+	.p2align	3
+.L__profc_main:
+	.zero	16
+	.size	.L__profc_main, 16
+
+	.type	.L__profd_main,@object  # @__profd_main
+	.section	__llvm_prf_data,"aw",@progbits
+	.p2align	3
+.L__profd_main:
+	.quad	-2624081020897602054    # 0xdb956436e78dd5fa
+	.quad	1160280                 # 0x11b458
+	.quad	.L__profc_main
+	.quad	main
+	.quad	0
+	.long	2                       # 0x2
+	.zero	4
+	.size	.L__profd_main, 48
+
+	.hidden	__profc__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc # @__profc__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
+	.type	__profc__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc,@object
+	.section	__llvm_prf_cnts,"aGw",@progbits,__profc__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc,comdat
+	.weak	__profc__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
+	.p2align	3
+__profc__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc:
+	.zero	16
+	.size	__profc__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc, 16
+
+	.hidden	__profd__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc # @__profd__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
+	.type	__profd__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc,@object
+	.section	__llvm_prf_data,"aGw",@progbits,__profd__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc,comdat
+	.weak	__profd__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
+	.p2align	3
+__profd__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc:
+	.quad	3668032130702950469     # 0x32e777c9ef44c045
+	.quad	11178423384             # 0x29a493458
+	.quad	__profc__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
+	.quad	0
+	.quad	0
+	.long	2                       # 0x2
+	.zero	4
+	.size	__profd__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc, 48
+
+	.hidden	__profc__ZNSolsEPFRSoS_E # @__profc__ZNSolsEPFRSoS_E
+	.type	__profc__ZNSolsEPFRSoS_E,@object
+	.section	__llvm_prf_cnts,"aGw",@progbits,__profc__ZNSolsEPFRSoS_E,comdat
+	.weak	__profc__ZNSolsEPFRSoS_E
+	.p2align	3
+__profc__ZNSolsEPFRSoS_E:
+	.zero	8
+	.size	__profc__ZNSolsEPFRSoS_E, 8
+
+	.hidden	__profd__ZNSolsEPFRSoS_E # @__profd__ZNSolsEPFRSoS_E
+	.type	__profd__ZNSolsEPFRSoS_E,@object
+	.section	__llvm_prf_data,"aGw",@progbits,__profd__ZNSolsEPFRSoS_E,comdat
+	.weak	__profd__ZNSolsEPFRSoS_E
+	.p2align	3
+__profd__ZNSolsEPFRSoS_E:
+	.quad	1974621466523451246     # 0x1b6743c305fdbf6e
+	.quad	24                      # 0x18
+	.quad	__profc__ZNSolsEPFRSoS_E
+	.quad	0
+	.quad	0
+	.long	1                       # 0x1
+	.zero	4
+	.size	__profd__ZNSolsEPFRSoS_E, 48
+
+	.hidden	__profc__ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_ # @__profc__ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_
+	.type	__profc__ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_,@object
+	.section	__llvm_prf_cnts,"aGw",@progbits,__profc__ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_,comdat
+	.weak	__profc__ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_
+	.p2align	3
+__profc__ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_:
+	.zero	8
+	.size	__profc__ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_, 8
+
+	.hidden	__profd__ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_ # @__profd__ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_
+	.type	__profd__ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_,@object
+	.section	__llvm_prf_data,"aGw",@progbits,__profd__ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_,comdat
+	.weak	__profd__ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_
+	.p2align	3
+__profd__ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_:
+	.quad	-1823052091915637016    # 0xe6b337c80655eee8
+	.quad	24                      # 0x18
+	.quad	__profc__ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_
+	.quad	_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_
+	.quad	0
+	.long	1                       # 0x1
+	.zero	4
+	.size	__profd__ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_, 48
+
+	.hidden	__profc__ZNSt9basic_iosIcSt11char_traitsIcEE8setstateESt12_Ios_Iostate # @__profc__ZNSt9basic_iosIcSt11char_traitsIcEE8setstateESt12_Ios_Iostate
+	.type	__profc__ZNSt9basic_iosIcSt11char_traitsIcEE8setstateESt12_Ios_Iostate,@object
+	.section	__llvm_prf_cnts,"aGw",@progbits,__profc__ZNSt9basic_iosIcSt11char_traitsIcEE8setstateESt12_Ios_Iostate,comdat
+	.weak	__profc__ZNSt9basic_iosIcSt11char_traitsIcEE8setstateESt12_Ios_Iostate
+	.p2align	3
+__profc__ZNSt9basic_iosIcSt11char_traitsIcEE8setstateESt12_Ios_Iostate:
+	.zero	8
+	.size	__profc__ZNSt9basic_iosIcSt11char_traitsIcEE8setstateESt12_Ios_Iostate, 8
+
+	.hidden	__profd__ZNSt9basic_iosIcSt11char_traitsIcEE8setstateESt12_Ios_Iostate # @__profd__ZNSt9basic_iosIcSt11char_traitsIcEE8setstateESt12_Ios_Iostate
+	.type	__profd__ZNSt9basic_iosIcSt11char_traitsIcEE8setstateESt12_Ios_Iostate,@object
+	.section	__llvm_prf_data,"aGw",@progbits,__profd__ZNSt9basic_iosIcSt11char_traitsIcEE8setstateESt12_Ios_Iostate,comdat
+	.weak	__profd__ZNSt9basic_iosIcSt11char_traitsIcEE8setstateESt12_Ios_Iostate
+	.p2align	3
+__profd__ZNSt9basic_iosIcSt11char_traitsIcEE8setstateESt12_Ios_Iostate:
+	.quad	-2929745365342267172    # 0xd757741cd86d58dc
+	.quad	0                       # 0x0
+	.quad	__profc__ZNSt9basic_iosIcSt11char_traitsIcEE8setstateESt12_Ios_Iostate
+	.quad	0
+	.quad	0
+	.long	1                       # 0x1
+	.zero	4
+	.size	__profd__ZNSt9basic_iosIcSt11char_traitsIcEE8setstateESt12_Ios_Iostate, 48
+
+	.hidden	__profc__ZNSt11char_traitsIcE6lengthEPKc # @__profc__ZNSt11char_traitsIcE6lengthEPKc
+	.type	__profc__ZNSt11char_traitsIcE6lengthEPKc,@object
+	.section	__llvm_prf_cnts,"aGw",@progbits,__profc__ZNSt11char_traitsIcE6lengthEPKc,comdat
+	.weak	__profc__ZNSt11char_traitsIcE6lengthEPKc
+	.p2align	3
+__profc__ZNSt11char_traitsIcE6lengthEPKc:
+	.zero	8
+	.size	__profc__ZNSt11char_traitsIcE6lengthEPKc, 8
+
+	.hidden	__profd__ZNSt11char_traitsIcE6lengthEPKc # @__profd__ZNSt11char_traitsIcE6lengthEPKc
+	.type	__profd__ZNSt11char_traitsIcE6lengthEPKc,@object
+	.section	__llvm_prf_data,"aGw",@progbits,__profd__ZNSt11char_traitsIcE6lengthEPKc,comdat
+	.weak	__profd__ZNSt11char_traitsIcE6lengthEPKc
+	.p2align	3
+__profd__ZNSt11char_traitsIcE6lengthEPKc:
+	.quad	5416310843529364284     # 0x4b2a9a03edaa033c
+	.quad	24                      # 0x18
+	.quad	__profc__ZNSt11char_traitsIcE6lengthEPKc
+	.quad	_ZNSt11char_traitsIcE6lengthEPKc
+	.quad	0
+	.long	1                       # 0x1
+	.zero	4
+	.size	__profd__ZNSt11char_traitsIcE6lengthEPKc, 48
+
+	.hidden	__profc__ZStorSt12_Ios_IostateS_ # @__profc__ZStorSt12_Ios_IostateS_
+	.type	__profc__ZStorSt12_Ios_IostateS_,@object
+	.section	__llvm_prf_cnts,"aGw",@progbits,__profc__ZStorSt12_Ios_IostateS_,comdat
+	.weak	__profc__ZStorSt12_Ios_IostateS_
+	.p2align	3
+__profc__ZStorSt12_Ios_IostateS_:
+	.zero	8
+	.size	__profc__ZStorSt12_Ios_IostateS_, 8
+
+	.hidden	__profd__ZStorSt12_Ios_IostateS_ # @__profd__ZStorSt12_Ios_IostateS_
+	.type	__profd__ZStorSt12_Ios_IostateS_,@object
+	.section	__llvm_prf_data,"aGw",@progbits,__profd__ZStorSt12_Ios_IostateS_,comdat
+	.weak	__profd__ZStorSt12_Ios_IostateS_
+	.p2align	3
+__profd__ZStorSt12_Ios_IostateS_:
+	.quad	3439173866890845001     # 0x2fba666910d5db49
+	.quad	24                      # 0x18
+	.quad	__profc__ZStorSt12_Ios_IostateS_
+	.quad	_ZStorSt12_Ios_IostateS_
+	.quad	0
+	.long	1                       # 0x1
+	.zero	4
+	.size	__profd__ZStorSt12_Ios_IostateS_, 48
+
+	.hidden	__profc__ZNKSt9basic_iosIcSt11char_traitsIcEE7rdstateEv # @__profc__ZNKSt9basic_iosIcSt11char_traitsIcEE7rdstateEv
+	.type	__profc__ZNKSt9basic_iosIcSt11char_traitsIcEE7rdstateEv,@object
+	.section	__llvm_prf_cnts,"aGw",@progbits,__profc__ZNKSt9basic_iosIcSt11char_traitsIcEE7rdstateEv,comdat
+	.weak	__profc__ZNKSt9basic_iosIcSt11char_traitsIcEE7rdstateEv
+	.p2align	3
+__profc__ZNKSt9basic_iosIcSt11char_traitsIcEE7rdstateEv:
+	.zero	8
+	.size	__profc__ZNKSt9basic_iosIcSt11char_traitsIcEE7rdstateEv, 8
+
+	.hidden	__profd__ZNKSt9basic_iosIcSt11char_traitsIcEE7rdstateEv # @__profd__ZNKSt9basic_iosIcSt11char_traitsIcEE7rdstateEv
+	.type	__profd__ZNKSt9basic_iosIcSt11char_traitsIcEE7rdstateEv,@object
+	.section	__llvm_prf_data,"aGw",@progbits,__profd__ZNKSt9basic_iosIcSt11char_traitsIcEE7rdstateEv,comdat
+	.weak	__profd__ZNKSt9basic_iosIcSt11char_traitsIcEE7rdstateEv
+	.p2align	3
+__profd__ZNKSt9basic_iosIcSt11char_traitsIcEE7rdstateEv:
+	.quad	3702665668304759324     # 0x336282cec956ea1c
+	.quad	24                      # 0x18
+	.quad	__profc__ZNKSt9basic_iosIcSt11char_traitsIcEE7rdstateEv
+	.quad	0
+	.quad	0
+	.long	1                       # 0x1
+	.zero	4
+	.size	__profd__ZNKSt9basic_iosIcSt11char_traitsIcEE7rdstateEv, 48
+
+	.hidden	__profc__ZSt5flushIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_ # @__profc__ZSt5flushIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_
+	.type	__profc__ZSt5flushIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_,@object
+	.section	__llvm_prf_cnts,"aGw",@progbits,__profc__ZSt5flushIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_,comdat
+	.weak	__profc__ZSt5flushIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_
+	.p2align	3
+__profc__ZSt5flushIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_:
+	.zero	8
+	.size	__profc__ZSt5flushIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_, 8
+
+	.hidden	__profd__ZSt5flushIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_ # @__profd__ZSt5flushIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_
+	.type	__profd__ZSt5flushIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_,@object
+	.section	__llvm_prf_data,"aGw",@progbits,__profd__ZSt5flushIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_,comdat
+	.weak	__profd__ZSt5flushIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_
+	.p2align	3
+__profd__ZSt5flushIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_:
+	.quad	7866737699217654289     # 0x6d2c4441f70ac211
+	.quad	24                      # 0x18
+	.quad	__profc__ZSt5flushIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_
+	.quad	0
+	.quad	0
+	.long	1                       # 0x1
+	.zero	4
+	.size	__profd__ZSt5flushIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_, 48
+
+	.hidden	__profc__ZNKSt9basic_iosIcSt11char_traitsIcEE5widenEc # @__profc__ZNKSt9basic_iosIcSt11char_traitsIcEE5widenEc
+	.type	__profc__ZNKSt9basic_iosIcSt11char_traitsIcEE5widenEc,@object
+	.section	__llvm_prf_cnts,"aGw",@progbits,__profc__ZNKSt9basic_iosIcSt11char_traitsIcEE5widenEc,comdat
+	.weak	__profc__ZNKSt9basic_iosIcSt11char_traitsIcEE5widenEc
+	.p2align	3
+__profc__ZNKSt9basic_iosIcSt11char_traitsIcEE5widenEc:
+	.zero	8
+	.size	__profc__ZNKSt9basic_iosIcSt11char_traitsIcEE5widenEc, 8
+
+	.hidden	__profd__ZNKSt9basic_iosIcSt11char_traitsIcEE5widenEc # @__profd__ZNKSt9basic_iosIcSt11char_traitsIcEE5widenEc
+	.type	__profd__ZNKSt9basic_iosIcSt11char_traitsIcEE5widenEc,@object
+	.section	__llvm_prf_data,"aGw",@progbits,__profd__ZNKSt9basic_iosIcSt11char_traitsIcEE5widenEc,comdat
+	.weak	__profd__ZNKSt9basic_iosIcSt11char_traitsIcEE5widenEc
+	.p2align	3
+__profd__ZNKSt9basic_iosIcSt11char_traitsIcEE5widenEc:
+	.quad	7033369832423244514     # 0x619b8c99238942e2
+	.quad	24                      # 0x18
+	.quad	__profc__ZNKSt9basic_iosIcSt11char_traitsIcEE5widenEc
+	.quad	0
+	.quad	0
+	.long	1                       # 0x1
+	.zero	4
+	.size	__profd__ZNKSt9basic_iosIcSt11char_traitsIcEE5widenEc, 48
+
+	.hidden	__profc__ZSt13__check_facetISt5ctypeIcEERKT_PS3_ # @__profc__ZSt13__check_facetISt5ctypeIcEERKT_PS3_
+	.type	__profc__ZSt13__check_facetISt5ctypeIcEERKT_PS3_,@object
+	.section	__llvm_prf_cnts,"aGw",@progbits,__profc__ZSt13__check_facetISt5ctypeIcEERKT_PS3_,comdat
+	.weak	__profc__ZSt13__check_facetISt5ctypeIcEERKT_PS3_
+	.p2align	3
+__profc__ZSt13__check_facetISt5ctypeIcEERKT_PS3_:
+	.zero	16
+	.size	__profc__ZSt13__check_facetISt5ctypeIcEERKT_PS3_, 16
+
+	.hidden	__profd__ZSt13__check_facetISt5ctypeIcEERKT_PS3_ # @__profd__ZSt13__check_facetISt5ctypeIcEERKT_PS3_
+	.type	__profd__ZSt13__check_facetISt5ctypeIcEERKT_PS3_,@object
+	.section	__llvm_prf_data,"aGw",@progbits,__profd__ZSt13__check_facetISt5ctypeIcEERKT_PS3_,comdat
+	.weak	__profd__ZSt13__check_facetISt5ctypeIcEERKT_PS3_
+	.p2align	3
+__profd__ZSt13__check_facetISt5ctypeIcEERKT_PS3_:
+	.quad	-8267219785494951000    # 0x8d44ef681d7e0ba8
+	.quad	174662744               # 0xa692458
+	.quad	__profc__ZSt13__check_facetISt5ctypeIcEERKT_PS3_
+	.quad	_ZSt13__check_facetISt5ctypeIcEERKT_PS3_
+	.quad	0
+	.long	2                       # 0x2
+	.zero	4
+	.size	__profd__ZSt13__check_facetISt5ctypeIcEERKT_PS3_, 48
+
+	.hidden	__profc__ZNKSt5ctypeIcE5widenEc # @__profc__ZNKSt5ctypeIcE5widenEc
+	.type	__profc__ZNKSt5ctypeIcE5widenEc,@object
+	.section	__llvm_prf_cnts,"aGw",@progbits,__profc__ZNKSt5ctypeIcE5widenEc,comdat
+	.weak	__profc__ZNKSt5ctypeIcE5widenEc
+	.p2align	3
+__profc__ZNKSt5ctypeIcE5widenEc:
+	.zero	16
+	.size	__profc__ZNKSt5ctypeIcE5widenEc, 16
+
+	.hidden	__profd__ZNKSt5ctypeIcE5widenEc # @__profd__ZNKSt5ctypeIcE5widenEc
+	.type	__profd__ZNKSt5ctypeIcE5widenEc,@object
+	.section	__llvm_prf_data,"aGw",@progbits,__profd__ZNKSt5ctypeIcE5widenEc,comdat
+	.weak	__profd__ZNKSt5ctypeIcE5widenEc
+	.p2align	3
+__profd__ZNKSt5ctypeIcE5widenEc:
+	.quad	968825231200299846      # 0xd71f56a2b212b46
+	.quad	172590168               # 0xa498458
+	.quad	__profc__ZNKSt5ctypeIcE5widenEc
+	.quad	_ZNKSt5ctypeIcE5widenEc
+	.quad	0
+	.long	2                       # 0x2
+	.zero	4
+	.size	__profd__ZNKSt5ctypeIcE5widenEc, 48
+
+	.type	.L__llvm_prf_nm,@object # @__llvm_prf_nm
+	.section	__llvm_prf_names,"a",@progbits
+.L__llvm_prf_nm:
+	.ascii	"\377\003\346\001x\332\235\221\301j\3030\020D\351\037Uq\2354\037\240\2020\024\023\371\224\313\262\225\345ZD\226\212v\323\222\277\257,\221\036B!\245\207=\354\f\363f\205\340(\304\344\274\207\204a\214K\357\334\003\034\367t^\000S\302\313\272/\350B\0265{R\232\20503&\340\204\216I\031)\017Yk\336\220\234\201H\234,.\312\f u\013}gr\356UGO\262\1779\350\250A\026\320\223\r\243W\346o\260\001\206\307\214\333Ba\361\276\272.\322\257\200g\262L\214le67\240\"\255\263\n5~\033\330z\033\336y\226\365V\3151\335\346t)\356\3566\357\322X\213?\013\250\235\374\231\346\177=\362~W\373\345F\033d=Y4\000f\266\346\004\023\032\313\371\217Z\303\227\017[\252\272\001z\335\\\261?\306\025\360\r\331\325\266\214"
+	.size	.L__llvm_prf_nm, 234
+
+	.ident	"clang version 10.0.0-4ubuntu1 "
+	.section	".note.GNU-stack","",@progbits
+	.addrsig
+	.addrsig_sym _Z11fill_randomPii
+	.addrsig_sym _Z9sum_arrayPii
+	.addrsig_sym main
+	.addrsig_sym _ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_
+	.addrsig_sym _ZNSt11char_traitsIcE6lengthEPKc
+	.addrsig_sym _ZStorSt12_Ios_IostateS_
+	.addrsig_sym _ZSt13__check_facetISt5ctypeIcEERKT_PS3_
+	.addrsig_sym _ZNKSt5ctypeIcE5widenEc
+	.addrsig_sym _GLOBAL__sub_I_sum_array.cc
+	.addrsig_sym _ZStL8__ioinit
+	.addrsig_sym __dso_handle
+	.addrsig_sym _ZSt4cout
+	.addrsig_sym __llvm_coverage_mapping
+	.addrsig_sym .L__profc__Z11fill_randomPii
+	.addrsig_sym .L__profd__Z11fill_randomPii
+	.addrsig_sym .L__profc__Z9sum_arrayPii
+	.addrsig_sym .L__profd__Z9sum_arrayPii
+	.addrsig_sym .L__profc_main
+	.addrsig_sym .L__profd_main
+	.addrsig_sym __profc__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
+	.addrsig_sym __profd__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
+	.addrsig_sym __profc__ZNSolsEPFRSoS_E
+	.addrsig_sym __profd__ZNSolsEPFRSoS_E
+	.addrsig_sym __profc__ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_
+	.addrsig_sym __profd__ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_
+	.addrsig_sym __profc__ZNSt9basic_iosIcSt11char_traitsIcEE8setstateESt12_Ios_Iostate
+	.addrsig_sym __profd__ZNSt9basic_iosIcSt11char_traitsIcEE8setstateESt12_Ios_Iostate
+	.addrsig_sym __profc__ZNSt11char_traitsIcE6lengthEPKc
+	.addrsig_sym __profd__ZNSt11char_traitsIcE6lengthEPKc
+	.addrsig_sym __profc__ZStorSt12_Ios_IostateS_
+	.addrsig_sym __profd__ZStorSt12_Ios_IostateS_
+	.addrsig_sym __profc__ZNKSt9basic_iosIcSt11char_traitsIcEE7rdstateEv
+	.addrsig_sym __profd__ZNKSt9basic_iosIcSt11char_traitsIcEE7rdstateEv
+	.addrsig_sym __profc__ZSt5flushIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_
+	.addrsig_sym __profd__ZSt5flushIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_
+	.addrsig_sym __profc__ZNKSt9basic_iosIcSt11char_traitsIcEE5widenEc
+	.addrsig_sym __profd__ZNKSt9basic_iosIcSt11char_traitsIcEE5widenEc
+	.addrsig_sym __profc__ZSt13__check_facetISt5ctypeIcEERKT_PS3_
+	.addrsig_sym __profd__ZSt13__check_facetISt5ctypeIcEERKT_PS3_
+	.addrsig_sym __profc__ZNKSt5ctypeIcE5widenEc
+	.addrsig_sym __profd__ZNKSt5ctypeIcE5widenEc
+	.addrsig_sym .L__llvm_prf_nm

@@ -4,8 +4,10 @@ import networkx as nx
 import numpy as np
 import ray
 import torch_geometric as pyg
+import compiler_gym
 from compiler_gym.datasets import Datasets
-from compiler_gym.wrappers import CompilerEnvWrapper
+from compiler_gym.wrappers import CompilerEnvWrapper, \
+    CommandlineWithTerminalAction, TimeLimit
 from gym import Env
 from gym import Wrapper
 from gym.spaces import Box
@@ -14,10 +16,54 @@ from ray import ObjectRef
 from compopt.constants import (
     NODE_FEATURES,
     EDGE_FEATURES,
-    RUNNABLE_BMS, MAX_NODES, MAX_EDGES
+    MAX_TEXT, MAX_TYPE,
+    MAX_FLOW, MAX_POS, RUNNABLE_BMS
 )
-from compopt.nx_utils import parse_nodes, parse_edges, parse_graph
+from compopt.nx_utils import parse_nodes, parse_edges
 from compopt.spaces import compute_graph_space
+
+MAX_NODES = int(1e4)
+MAX_EDGES = int(1e4)
+DATA = [
+    'cbench-v1',
+    'mibench-v1',
+    'blas-v0',
+    'npb-v0'
+]
+
+
+class RunnableWrapper(CompilerEnvWrapper):
+    def __init__(self, env):
+        super(RunnableWrapper, self).__init__(env)
+        self.i = 0
+        # self.observation_space.sample = _sample()
+
+    def reset(self):
+        # only reset for runnable benchmarks
+        bm = RUNNABLE_BMS[self.i % len(RUNNABLE_BMS)]
+        obs = self.env.reset(benchmark=bm)
+        self.i += 1
+
+        return obs
+
+
+def make_env(config):
+    # TODO: what if env object is given?
+    env = compiler_gym.make(
+        "llvm-ic-v0",
+        observation_space="Programl",
+        reward_space="IrInstructionCountOz",
+    )
+    # env = TimeLimit(env, 128)
+    env = CommandlineWithTerminalAction(env)
+    env = TimeLimit(env, 1024)  # TODO: rough limit
+    # TODO: conflicts with rllib's evaluator
+    # env = CycleOverBenchmarks(
+    #     env, dataset.benchmarks()
+    # )
+    env = RllibWrapper(env, DATA)
+
+    return env
 
 
 class ActionHistogram(CompilerEnvWrapper):
@@ -111,7 +157,51 @@ class PygWrapper(Wrapper):
         return obs
 
 
-class ProgramlWrapper(Wrapper):
+def parse_graph(g):
+    # TODO: want to avoid for loop
+    x = parse_nodes(g.nodes, return_attr=True)
+    edge_attr = parse_edges(g.edges, return_attr=True)
+
+    g = nx.DiGraph(g)
+    edge_index = list(g.edges)
+
+    return x, edge_index, edge_attr
+
+
+def compute_space():
+    return Tuple([
+        _Repeated(
+            Box(
+                low=np.array([0, 0]),
+                high=np.array([MAX_TEXT, MAX_TYPE]),
+                shape=(2,),
+                dtype=int
+            ),
+            max_len=MAX_NODES * 2,  # TODO: find exact bound
+        ),
+        _Repeated(
+            Box(
+                low=np.array([0, 0]),
+                high=np.array([MAX_NODES, MAX_NODES]),
+                # high=np.array([num_nodes - 1, num_nodes - 1]),
+                shape=(2,),
+                dtype=int
+            ),
+            max_len=MAX_EDGES * 2,  # TODO: find exact bound
+        ),
+        _Repeated(
+            Box(
+                low=np.array([0, 0]),
+                high=np.array([MAX_FLOW, MAX_POS]),
+                shape=(2,),
+                dtype=int
+            ),
+            max_len=MAX_EDGES * 2,  # TODO: find exact bound
+        )
+    ])
+
+
+class RllibWrapper(Wrapper):
     def __init__(
             self,
             env,

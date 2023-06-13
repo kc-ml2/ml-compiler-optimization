@@ -1,0 +1,62 @@
+Counters:
+  _ZNKSt9basic_iosIcSt11char_traitsIcEE5widenEc:
+    Hash: 0x0000000000000018
+    Counters: 1
+    Function count: 1
+  _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc:
+    Hash: 0x000000029a493458
+    Counters: 2
+    Function count: 1
+  _ZNKSt5ctypeIcE5widenEc:
+    Hash: 0x000000000a498458
+    Counters: 2
+    Function count: 1
+  _ZSt13__check_facetISt5ctypeIcEERKT_PS3_:
+    Hash: 0x000000000a692458
+    Counters: 2
+    Function count: 1
+  _ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_:
+    Hash: 0x0000000000000018
+    Counters: 1
+    Function count: 1
+  _ZStorSt12_Ios_IostateS_:
+    Hash: 0x0000000000000018
+    Counters: 1
+    Function count: 0
+  _ZNSolsEPFRSoS_E:
+    Hash: 0x0000000000000018
+    Counters: 1
+    Function count: 1
+  _Z11fill_randomPii:
+    Hash: 0x00000000000046d1
+    Counters: 2
+    Function count: 1
+  _ZSt5flushIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_:
+    Hash: 0x0000000000000018
+    Counters: 1
+    Function count: 1
+  _Z9sum_arrayPii:
+    Hash: 0x000000000011b458
+    Counters: 2
+    Function count: 1000
+  main:
+    Hash: 0x000000000011b458
+    Counters: 2
+    Function count: 1
+  _ZNSt11char_traitsIcE6lengthEPKc:
+    Hash: 0x0000000000000018
+    Counters: 1
+    Function count: 1
+  _ZNKSt9basic_iosIcSt11char_traitsIcEE7rdstateEv:
+    Hash: 0x0000000000000018
+    Counters: 1
+    Function count: 0
+  _ZNSt9basic_iosIcSt11char_traitsIcEE8setstateESt12_Ios_Iostate:
+    Hash: 0x0000000000000000
+    Counters: 1
+    Function count: 0
+Instrumentation level: Front-end
+Functions shown: 14
+Total functions: 14
+Maximum function count: 1000
+Maximum internal block count: 260409705
