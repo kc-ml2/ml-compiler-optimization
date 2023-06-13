@@ -10,7 +10,7 @@ from ray.rllib.models import ModelCatalog
 from ray.rllib.utils import try_import_torch
 
 from compopt.rllib_model import Model
-from compopt.wrappers import compute_space, parse_graph
+from compopt.wrappers import compute_graph_space, parse_graph
 
 torch, nn = try_import_torch()
 
@@ -21,7 +21,7 @@ class EvalWrapper(Wrapper):
             env,
     ):
         super().__init__(env)
-        self.observation_space = compute_space()
+        self.observation_space = compute_graph_space()
 
     def step(self, ac):
         obs, rew, done, info = self.env.step(ac)

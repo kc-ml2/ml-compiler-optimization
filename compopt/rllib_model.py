@@ -7,6 +7,7 @@ from compopt.encoders import NodeEncoder, EdgeEncoder, GNN
 
 torch, nn = try_import_torch()
 
+
 # class GNN(nn.Module):
 #     def __init__(self, node_dim, edge_dim, out_dim=32):
 #         super().__init__()

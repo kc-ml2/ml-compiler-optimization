@@ -13,7 +13,6 @@ from compopt.rllib_utils import CustomCallbacks
 from compopt.wrappers import LogNormalizer, ActionHistogram
 import multiprocessing as mp
 
-# observation_space='InstCountNorm'
 observation_space = 'Autophase'
 
 
@@ -37,7 +36,7 @@ register_env(
 )
 
 
-def main(bm):
+def train(bm):
     env_config = {
         'benchmark': bm,
         'observation_space': observation_space,
@@ -93,7 +92,10 @@ def main(bm):
     results = tuner.fit()
     ray.shutdown()
 
-
+TRAIN = False
 if __name__ == "__main__":
-    with mp.Pool(len(RUNNABLE_BMS)) as pool:
-        pool.map(main, RUNNABLE_BMS)
+    if TRAIN:
+        with mp.Pool(len(RUNNABLE_BMS)) as pool:
+            pool.map(train, RUNNABLE_BMS)
+
+

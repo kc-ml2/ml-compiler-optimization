@@ -1,10 +1,15 @@
-from gym import Wrapper
-import numpy as np
+import pickle
+
 import networkx as nx
+import numpy as np
+import ray
 import torch_geometric as pyg
 from compiler_gym.datasets import Datasets
 from compiler_gym.wrappers import CompilerEnvWrapper
+from gym import Env
 from gym import Wrapper
+from gym.spaces import Box
+from ray import ObjectRef
 
 from compopt.constants import (
     NODE_FEATURES,
@@ -12,7 +17,8 @@ from compopt.constants import (
     RUNNABLE_BMS, MAX_NODES, MAX_EDGES
 )
 from compopt.nx_utils import parse_nodes, parse_edges, parse_graph
-from compopt.spaces import compute_space
+from compopt.spaces import compute_graph_space
+
 
 class ActionHistogram(CompilerEnvWrapper):
     def __init__(self, env):
@@ -33,6 +39,7 @@ class ActionHistogram(CompilerEnvWrapper):
         obs = np.concatenate([obs, self.histogram])
 
         return obs, reward, done, info
+
 
 class LogNormalizer(CompilerEnvWrapper):
     """
@@ -104,7 +111,7 @@ class PygWrapper(Wrapper):
         return obs
 
 
-class RllibWrapper(Wrapper):
+class ProgramlWrapper(Wrapper):
     def __init__(
             self,
             env,
@@ -114,7 +121,7 @@ class RllibWrapper(Wrapper):
         if dataset_ids:
             datasets = [env.datasets[i] for i in dataset_ids]
             self.env.datasets = Datasets(datasets)
-        self.observation_space = compute_space()
+        self.observation_space = compute_graph_space()
 
     def step(self, ac):
         obs, rew, done, info = self.env.step(ac)
@@ -142,3 +149,101 @@ class RllibWrapper(Wrapper):
                 obs = parse_graph(obs)
 
                 return obs
+
+
+class ObjRefSpace(Box):
+    def __init__(self, dummy_obs):
+        super().__init__(shape=(28,), low=0, high=255, dtype=np.uint8)
+
+        dummy_obs = parse_graph(dummy_obs)
+        obj_ref = ray.put(dummy_obs)
+        self.dummy = ObjectRefWrapper.encrypt(obj_ref)
+
+    def sample(self):
+        return self.dummy
+
+    def contains(self, x):
+        return True
+
+
+class ObjectRefWrapper(Wrapper):
+    def __init__(self, env: Env) -> None:
+        if not ray.is_initialized():
+            raise RuntimeError(
+                'Ray must be initialized before using RllibWrapper'
+            )
+
+        super().__init__(env)
+        # Repeated Values too inefficient
+        # So we bypass by storing object into ObjectStore
+        obs = env.reset()
+        self.observation_space = ObjRefSpace(obs)
+
+        # self.flag = True
+
+        # TODO: check if ray server is up
+
+    @staticmethod
+    def encrypt(obj_ref: ray.ObjectRef) -> np.ndarray:
+        # obj_ref.binary() == b'\x00\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\x01\x00\x00\x00\x03'
+
+        arr = np.array([i for i in obj_ref.binary()], dtype=np.uint8)
+
+        return arr
+
+    @staticmethod
+    def decrypt(arr: np.ndarray) -> ObjectRef:
+        # obj = ObjectRef(arr.tobytes())
+        obj = ObjectRef(arr.tobytes())
+
+        return obj
+
+    def _process_obs(self, obs):
+        obs = parse_graph(obs)
+
+        # e.g. ObjectRef(00ffffffffffffffffffffffffffffffffffffff0100000003000000)
+        obj_ref = ray.put(obs)
+
+        arr = ObjectRefWrapper.encrypt(obj_ref)
+
+        return arr
+
+    def reset(self, **kwargs):
+        obs = self.env.reset(**kwargs)
+
+        return self._process_obs(obs)
+
+    def step(self, action):
+        obs, rew, done, info = self.env.step(action)
+        obs = self._process_obs(obs)
+
+        return obs, rew, done, info
+
+
+class PickleWrapper(Wrapper):
+    def __init__(self, env):
+        super(PickleWrapper, self).__init__(env)
+        self.max_pkl_len = 1000000
+        self.env.observation_space._shape = (self.max_pkl_len,)
+
+    def pad(self, obs):
+        obs = np.array(obs)
+        original_len = len(obs)
+        obs = np.pad(obs, (0, self.max_pkl_len - len(obs)))
+        obs[-1] = original_len
+
+        return obs
+
+    def reset(self):
+        obs = self.env.reset()
+        obs = pickle.dumps(obs)
+        obs = self.pad(obs)
+
+        return obs
+
+    def step(self, action):
+        obs, rew, done, info = self.env.step(action)
+        obs = pickle.dumps(obs)
+        obs = self.pad(obs)
+
+        return obs, rew, done, info
